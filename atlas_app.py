@@ -75,10 +75,15 @@ if query:
     is_short = len(query.split()) <= 2
 
     st.write(f"**Prediction:** {'In-Appetite' if pred=='Yes' else 'Out of Appetite (OOA)'}  |  **Confidence:** {confidence:.2f}")
-    if is_short:
-        st.warning("Input is very short (1-2 words) — this classifier is known to be less reliable on short inputs. Treat this result with extra caution.")
 
-    if pred == "No" and confidence > 0.75 and not is_short:
+    borderline = confidence < 0.80
+
+    if is_short and borderline:
+        st.warning("Input is short AND confidence is borderline — this is exactly the pattern that caused a real error in testing ('Plumbers' misfired). Treating this result with extra caution and continuing to further checks.")
+    elif is_short:
+        st.caption("Input is short, but confidence is high enough that this result is likely still reliable.")
+
+    if pred == "No" and confidence >= 0.80:
         st.error("Result: OOA — high confidence. Stopping here (matches Step 0 design).")
     else:
         st.subheader("Step 2 — Rules Filter")
