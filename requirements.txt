@@ -1,0 +1,5 @@
+streamlit
+sentence-transformers
+numpy
+pandas
+scikit-learn

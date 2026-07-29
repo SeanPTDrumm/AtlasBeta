@@ -1,0 +1,544 @@
+COB_Group,Hiscox_COB,GL,PL,BOP,Cyber,Full_Industry_Code,Definition
+Allied Health,Acupressure services,Yes,Yes,Yes,Yes,62139900_29129100_01000000,Treats patients by applying pressure to the surface of the body.
+Allied Health,Acupuncture services,Yes,Yes,Yes,Yes,62139900_29129100_02000000,"Uses sterile needles to stimulate certain parts of the body, relieving stress."
+Allied Health,Art therapy,Yes,Yes,Yes,Yes,62134000_29112500_01000000,"Improves physical, emotional, mental, and spiritual wellbeing through art therapy."
+Allied Health,Audiology,Yes,Yes,Yes,Yes,62134000_29118100_00000000,"Addresses hearing and balance disorders with tests, treatments, and hearing aids."
+Allied Health,Barber/beauty/cosmetology schools,No,No,No,Yes,61151100_39500000_00000000,Specializes in teaching beauty services as a career or technical instructor.
+Allied Health,Barber/hair stylist services,Yes,Yes,Yes,Yes,81211100_39501100_00000000,"Provides haircuts and styling, including facial hair shaving and trimming."
+Allied Health,Beautician/cosmetology services,Yes,Yes,Yes,Yes,81211200_39501200_00000000,"Offers haircuts, styling, coloring, extensions, straightening, and may also perform manicures, facials, and makeup."
+Allied Health,"Child, Family, and School Social Workers",No,No,Yes,Yes,62419000_21102100_00000000,Delivers social services and assistance to improve the social and psychological welfare of children and families.
+Allied Health,Dance therapy,No,Yes,Yes,Yes,62134000_29112500_02000000,"Uses dance as a therapeutic tool to enhance physical, emotional, mental, and spiritual health."
+Allied Health,Day/beauty spas,No,No,No,Yes,81219900_39500000_00000000,"Provides personal care treatments to promote health, beauty, and relaxation."
+Allied Health,Diet/nutrition services,Yes,Yes,Yes,Yes,81219100_29103100_00000000,Advises clients on the impact of food and nutrition on health.
+Allied Health,Drama Therapy,Yes,Yes,Yes,Yes,62134000_29112500_03000000,"Utilizes drama therapy to support physical, emotional, mental, and spiritual health."
+Allied Health,Esthetician services,Yes,Yes,Yes,Yes,81211200_39509400_00000000,"Specializes in cosmetic skin treatments such as waxing, threading, body wraps, skin care, eyelash and eyebrow tinting, eyelash extensions, and makeup application."
+Allied Health,First aid and CPR training,Yes,Yes,Yes,Yes,61169900_21109100_00000000,Trains and certifies individuals in CPR and first aid.
+Allied Health,Healthcare Social Workers,No,No,Yes,Yes,62419000_21102200_00000000,"Supports and serves individuals or groups with acute, chronic, or terminal illnesses."
+Allied Health,Home health aide,Yes,Yes,No,Yes,62161000_31112100_01000000,"Provides private home care as a licensed, certified, or specially trained aide or attendant."
+Allied Health,Hypnosis,Yes,Yes,Yes,Yes,62133000_19303900_01000000,Uses hypnosis to help patients uncover repressed memories or change certain behaviors.
+Allied Health,Marriage and family therapy,Yes,Yes,Yes,Yes,62419000_21101300_00000000,Counsels individuals and families to improve and overcome relationship issues.
+Allied Health,Massage therapy,Yes,Yes,No,Yes,62139900_31901100_00000000,Uses massage therapy to manipulate muscles and other soft tissues for client well-being.
+Allied Health,Mental Health and Substance Abuse Social Workers,No,No,Yes,Yes,62419000_21102300_00000000,"Provides advice, treatment, and support for individuals dealing with addiction, mental health issues, or behavioral problems."
+Allied Health,Mental health counseling,Yes,Yes,Yes,Yes,62133000_21101400_00000000,"Uses a psychological and educational approach, combined with traditional medical models, to counsel clients and assist with diagnosis."
+Allied Health,Music therapy,Yes,Yes,Yes,Yes,62134000_29112500_04000000,"Employs music therapy to enhance physical, emotional, mental, and spiritual health."
+Allied Health,Nail technician services,Yes,Yes,No,Yes,81211300_39509200_00000000,"Specializes in nail care and artistry, offering manicures, pedicures, acrylic nails, nail wraps, dip nails, and related services."
+Allied Health,Occupational therapy,Yes,Yes,Yes,Yes,62134000_29112200_00000000,"Helps injured, ill, or disabled patients recover and improve through the therapeutic use of everyday activities."
+Allied Health,Personal care aide,Yes,Yes,No,Yes,62161000_31112100_02000000,"Delivers private home care as a licensed, certified, or specially trained aide or attendant. (See also Home Health Aide)"
+Allied Health,Personal training (health and fitness),Yes,Yes,No,Yes,61169900_29909100_01000000,"Prescribes exercise routines and provides instruction, often educating clients on broader aspects of wellness including nutrition."
+Allied Health,Physical therapy,No,No,Yes,Yes,62134000_29112300_00000000,"Utilizes exercise, massage, and functional movement training to help injured or ill individuals improve mobility and manage pain."
+Allied Health,Psychology,Yes,Yes,Yes,Yes,62133000_19303900_02000000,"Offers clinical analysis and counseling in a variety of therapeutic contexts, typically as a professional with a PhD (not M.D.)."
+Allied Health,Social work services,Yes,Yes,Yes,Yes,62419000_21102900_00000000,"Assists people in solving and coping with daily life challenges, and is qualified to diagnose and treat mental, behavioral, and emotional issues."
+Allied Health,Speech therapy,Yes,Yes,Yes,Yes,62134000_29112700_00000000,"Conducts assessments, diagnoses, and treatments to prevent speech, language, and swallowing disorders."
+Allied Health,Substance abuse counseling,Yes,Yes,Yes,Yes,62419000_21101100_00000000,"Provides counseling for clients with dependencies on alcohol, prescription drugs, or illegal substances, without the use of prescription medication."
+Allied Health,Yoga/pilates instruction,Yes,Yes,No,Yes,61169900_39903100_00000000,Guides clients through physical poses and mental imagery to help achieve tranquility of body and mind.
+Architect & Engineering,Aerospace engineering,No,No,No,No,54133000_17201100_00000000,"Designs and analyzes aircraft, spacecraft, satellites, and missiles."
+Architect & Engineering,Agency construction manager,Yes,Yes,Yes,Yes,54133000_11902100_01000000,"Specializes in running construction projects for the project owner; also known as an ""owner's representative"""
+Architect & Engineering,Agricultural engineering,No,No,Yes,Yes,54133000_17202100_00000000,Develops climate control systems and increases storage capacity and efficiency of refrigeration; may integrate artificial intelligence and geospatial systems in agriculture.
+Architect & Engineering,Architectural and Civil Drafters,No,No,Yes,Yes,54134000_17301100_00000000,Converts the designs of engineers and architects into technical drawings using software.
+Architect & Engineering,Architecture,Yes,Yes,Yes,Yes,54131000_17101100_00000000,"Plans and designs the construction of buildings, conducts site evaluations, prepares construction documentation, reviews builder or consultant qualifications, plans projects, and reviews building codes."
+Architect & Engineering,Bioengineering,No,No,No,No,54133000_17203100_00000000,"Combines engineering with medical and biological sciences to design and create equipment, devices, computer systems, and software used in healthcare."
+Architect & Engineering,Building inspection,Yes,No,Yes,Yes,54135000_47401100_00000000,"Inspects structures at different stages of completion, often as a certified residential or commercial building inspector, plumbing, electrical, or mechanical inspector."
+Architect & Engineering,Chemical engineering,No,No,No,No,54133000_17204100_00000000,"Conceives, designs, and improves processes to produce, transform, and transport materials."
+Architect & Engineering,Civil engineering,No,No,No,No,54133000_17205100_00000000,"Plans, designs, and maintains various types of infrastructure, often specializing in areas such as transportation engineering."
+Architect & Engineering,Computer Hardware engineering,No,No,Yes,Yes,54133000_17206100_00000000,"Designs, tests, updates, and analyzes computer hardware, and may oversee the manufacturing process of computer hardware."
+Architect & Engineering,Control systems integration/automation,Yes,Yes,Yes,Yes,54151200_51916200_00000000,Specializes in automating component subsystems (such as HVAC) under a central control unit and ensures those subsystems function together.
+Architect & Engineering,Draftsman (including CAD/CAM),Yes,Yes,Yes,Yes,54134000_17301900_01000000,Creates technical drawings and renderings by hand or using computer-aided programs (CAD/CAM); may also be an architect.
+Architect & Engineering,Electrical and Electronics Drafters,No,No,Yes,Yes,54134000_17301200_00000000,"Drafts diagrams of electrical components such as wiring and circuit boards, and creates drawings used to manufacture, install, and repair electronic equipment."
+Architect & Engineering,Electrical engineering,Yes,Yes,Yes,Yes,54133000_17207100_00000000,"Practices the study and application of electricity, electronics, and electromagnetism."
+Architect & Engineering,Engineering,Yes,Yes,Yes,Yes,54133000_17219900_01000000,"Uses science and technology to design structures such as buildings, engines, and machines."
+Architect & Engineering,Environmental engineering,Yes,Yes,Yes,Yes,54133000_17208100_00000000,Applies science and engineering principles to improve the natural environment and solve environmental problems.
+Architect & Engineering,Health and Safety Engineer,No,No,No,No,54133000_17211100_00000000,"Develops procedures and designs systems to protect people from illness and injury, and property from damage; may investigate industrial accidents and injuries."
+Architect & Engineering,Industrial engineering,Yes,Yes,Yes,Yes,54133000_17211200_00000000,"Works to optimize or eliminate wastefulness in production processes, systems, or organizations."
+Architect & Engineering,Interior decorator,No,No,Yes,Yes,54141000_27102500_01000100,Specializes in home decor and the furnishing of indoor spaces.
+Architect & Engineering,Interior design,Yes,Yes,Yes,Yes,54141000_27102500_02000100,"Designs indoor spaces to be aesthetically pleasing, functional, and safe by determining space requirements and selecting decorative items such as colors, lighting, and materials."
+Architect & Engineering,Land surveyor,Yes,Yes,Yes,Yes,54137000_17102200_00000000,"Collects, analyzes, and charts data to map the shape of a piece of land and its site features."
+Architect & Engineering,Landscape architect,Yes,Yes,Yes,Yes,54132000_17101200_00000000,"Designs the outdoor spaces of recreational facilities, businesses, private homes, and similar areas in nature."
+Architect & Engineering,Marine Engineering and Naval Architect,No,No,No,No,54133000_17212100_00000000,"Designs, builds, and maintains ships such as aircraft carriers, submarines, sailboats, and tankers."
+Architect & Engineering,Materials engineering,No,No,No,No,54133000_17213100_00000000,"Creates, processes, and tests materials at the atomic level; may work in ceramics, composites, plastics, semiconductors, and metallurgical engineering."
+Architect & Engineering,Mechanical Drafters,No,No,Yes,Yes,54134000_17301300_00000000,"Prepares detailed working diagrams of machinery and mechanical devices, including dimensions, fastening methods, and other engineering information."
+Architect & Engineering,Mechanical engineering,No,No,Yes,Yes,54133000_17214100_00000000,"Analyzes, designs, manufactures, and maintains mechanical systems; involves the production and usage of heat and mechanical power for the production and operation of machines."
+Architect & Engineering,Mining and Geological engineering,No,No,No,No,54133000_17215100_00000000,Designs mines to safely and efficiently remove minerals such as coal and metals for use in manufacturing and utilities.
+Architect & Engineering,Nuclear engineering,No,No,No,No,54133000_17216100_00000000,"Researches and develops the processes, instruments, and systems used to derive benefits from nuclear energy and radiation."
+Architect & Engineering,Petroleum engineering,No,No,No,No,54133000_17217100_00000000,"Designs and develops methods for extracting oil and gas from deposits below the earth’s surface, as well as from older wells."
+Architect & Engineering,Process engineering,Yes,Yes,Yes,Yes,54133000_13111100_00000000,"Develops, configures, and optimizes industrial processes from inception through to start up and certification; may assess processes, take measurements, and interpret data."
+Architect & Engineering,Surveying/mapping services,No,No,Yes,Yes,54137000_17102000_00000000,Collects data and makes maps of the Earth's surface.
+Architect & Engineering,Transportation engineering,Yes,Yes,Yes,Yes,54133000_17219900_02000000,Reviews infrastructure projects and their impact on roads and railways.
+Consulting,Audio/Visual consulting,No,No,Yes,Yes,54161800_13111100_01000000,"Consults on AV and sound system designs for auditoriums, theaters, classrooms, churches, and other venues."
+Consulting,Business consulting,Yes,Yes,Yes,Yes,54161100_13111100_01000000,Provides advice to companies to help them improve performance through the analysis of existing business problems and development of future plans.
+Consulting,Education consulting,Yes,Yes,Yes,Yes,54161100_13111100_02000000,Advises clients in the education sector to help them improve performance through the analysis of existing problems and development of future plans.
+Consulting,Environmental consulting,No,No,No,Yes,54162000_13111100_00000000,Offers expert assessment and advisory services for clients on matters pertaining to the management of environmental issues and environmental compliance.
+Consulting,Healthcare consulting,No,No,Yes,Yes,54161100_13111100_03000000,"Analyzes and advises healthcare companies from a business perspective to increase efficiency, reduce costs, and alleviate complexities in their operating model."
+Consulting,Human Resources (HR) consulting,Yes,Yes,Yes,Yes,54161200_11312100_00000000,Provides advice to companies to help them improve their human resources policies and procedures by analyzing a company's HR programs and recommending solutions.
+Consulting,Life science consulting,No,No,Yes,Yes,54169000_11912100_01000000,"Advises companies in the healthcare space on the most effective and efficient ways of delivering their products or services to market; assists with operational, compliance, and investigative issues."
+Consulting,Management consulting,Yes,Yes,Yes,Yes,54161100_13111100_04000000,Offers advice to companies to help them improve performance through the analysis of existing business problems and development of future plans.
+Consulting,Other consulting services,Yes,Yes,Yes,Yes,54161100_13111100_05000000,"Provides specialized professional advice or expertise not classified elsewhere, such as technical, operational, or industry-specific consulting, to help clients solve problems or improve performance."
+Consulting,Project management,Yes,Yes,Yes,Yes,54161800_13108200_00000000,"Plans, coordinates, and manages projects for clients, overseeing timelines, resources, and deliverables to ensure successful completion, but does not perform design or construction work."
+Consulting,Research consulting,Yes,Yes,Yes,Yes,54169000_13111100_00000000,"Conducts research and analysis for clients, offering expert guidance on data collection, methodology, and interpretation to support business, scientific, or policy decisions."
+Consulting,Resume consulting,Yes,Yes,Yes,Yes,54161100_13111100_06000000,Helps individuals develop their resumes for use in seeking employment; may also be classified as a document preparer.
+Consulting,Safety consultant,Yes,Yes,Yes,Yes,54169000_11912100_02000000,"Advises organizations on workplace safety, regulatory compliance, and risk management, providing assessments, training, and recommendations to reduce hazards and improve safety practices."
+Consulting,Strategy consultant,Yes,Yes,Yes,Yes,54161100_13111100_07000000,"Provides expert advice to organizations on business strategy, market positioning, and long-term planning to improve competitiveness, growth, and operational effectiveness."
+Consulting,Telecommunications consulting,No,No,Yes,Yes,54161800_13111100_02000000,"Analyzes telecommunication systems such as internet, voice, and video services within companies and may provide recommendations on upgrades or security."
+Creative,Artists,No,No,Yes,Yes,71151000_27101000_00000000,"Creates original works of art using a variety of materials and techniques, including painting, sculpting, illustrating, pottery, glassware, or textiles, and sells these creations."
+Creative,Commercial photography,No,No,Yes,Yes,54192200_27402100_00000000,"Takes photographs or videos for commercial clients, producing content for events or advertising. (See also ""Photography"")"
+Creative,Graphic design,Yes,Yes,Yes,Yes,54143000_27102400_00000000,"Develops visual concepts for businesses, using computer software or manual techniques, to communicate ideas for advertisements, magazines, and reports."
+Creative,Photography,Yes,Yes,Yes,Yes,54192100_27402100_01000000,"Captures photographs or videos of events such as weddings, corporate gatherings, and parties."
+Creative,Photography studio,No,No,Yes,Yes,54192100_27402100_02000000,"Operates a studio to take, develop, print, and duplicate pictures. (See also ""Photography"")"
+Creative,Videography,No,No,Yes,Yes,54192200_27403100_00000000,"Records videos of events, including weddings, corporate functions, and parties."
+Financial Services,Accounting,Yes,Yes,Yes,Yes,54121100_13201100_01000000,"Keeps, audits, and inspects the financial records of individuals or businesses, and prepares financial and tax reports."
+Financial Services,Actuarial services,Yes,No,Yes,Yes,52429800_15201100_00000000,"Analyzes the financial impact of risk and uncertainty, providing actuarial services."
+Financial Services,Auditor,No,No,No,Yes,54121100_13201100_02000000,"Reviews and verifies the accuracy of financial records, ensuring compliance with tax laws."
+Financial Services,Bookkeeping,Yes,Yes,Yes,Yes,54121900_43303100_00000000,Records financial transactions for clients as part of an accounting function.
+Financial Services,Certified public accountant,No,No,Yes,Yes,54121100_13201100_03000000,"Prepares and inspects financial records, and prepares financial and tax reports as a certified public accountant (CPA)."
+Financial Services,Credit counseling,Yes,No,Yes,Yes,54199000_13207100_00000000,"Offers education to clients on debt management and budgeting, helping them avoid unmanageable debts."
+Financial Services,Financial auditing or consulting,Yes,No,Yes,Yes,54169000_13206100_00000000,Helps clients maintain and achieve desired investment income and risk tolerance through asset allocation.
+Financial Services,Financial planner,No,No,Yes,Yes,52393000_13205200_01000000,Provides advice on investment strategies and asset management.
+Financial Services,Insurance adjuster,No,No,Yes,Yes,52429800_13103100_01000000,Evaluates claims or losses and recommends settlement amounts on behalf of an insurance company or insured.
+Financial Services,Insurance agent,Yes,Yes,Yes,Yes,52421000_41302100_00000000,"An insurance agent is a licensed intermediary who sells and services insurance products on behalf of insurers, without assuming underwriting authority or insurance risk."
+Financial Services,Investment advice,Yes,No,Yes,Yes,52393000_13205200_02000000,A professional who helps clients maintain and achieve desired investment income and risk tolerance through asset allocation.
+Financial Services,Medical billing,Yes,No,Yes,Yes,54121900_43302100_00000000,"Submits and follows up on insurance claims, processes patient invoices, and manages payments in medical billing."
+Financial Services,Mortgage brokering/banking,Yes,No,Yes,No,52231000_13207200_00000000,Buys and sells shares and other securities through regulated markets as a stockbroker.
+Financial Services,Office administrative services,No,No,Yes,Yes,56111000_43601000_00000000,"Handles general administrative tasks such as bookkeeping, communications, scheduling, data entry, and secretarial services."
+Financial Services,Stock brokering,Yes,No,Yes,Yes,52312000_41303100_00000000,Buys and sells shares and other securities through regulated markets as a stockbroker.
+Financial Services,Tax preparation,Yes,Yes,Yes,Yes,54121300_13208200_00000000,"Prepares tax returns and offers tax advice, and may represent clients in tax audits."
+Landscape/Janitorial,Exterior cleaning services,Yes,No,No,Yes,56179000_37201900_02000200,"Cleans the exterior of buildings, and may also restore hygiene or remove litter and dirt."
+Landscape/Janitorial,Janitorial/cleaning services,Yes,No,No,Yes,56172000_37201100_01000000,"Performs janitorial or cleaning services in various settings, including apartments, houses, office buildings, and schools, and may also handle minor repairs."
+Landscape/Janitorial,Landscaping/gardening services,Yes,Yes,No,Yes,56173000_37301100_01000000,Modifies or maintains the visible features of land through landscaping or gardening services.
+Landscape/Janitorial,Lawn care services,Yes,No,No,Yes,56173000_37301100_02000000,"Provides lawn care services, including maintenance and modification of outdoor areas."
+Landscape/Janitorial,Power washing services,No,No,No,Yes,56179000_37201900_01000000,Uses heat and water pressure to remove organic stains such as soil or mold through power washing services.
+Landscape/Janitorial,Snow blowing and removal (no auto coverage),No,No,No,Yes,56179000_37301100_01000000,"Removes snow by shoveling, scraping, or plowing, and may apply salt or other ice-melting materials."
+Legal Services,Attorneys office,No,No,Yes,No,54111000_23101100_01000000,"Works in an office maintained by a lawyer or a firm of lawyers, practicing or studying law."
+Legal Services,Claims adjusting,Yes,Yes,Yes,Yes,52429100_13103100_00000000,"Evaluates claims or losses and recommends settlement amounts on behalf of an insurance company or insured, with authority to settle claims."
+Legal Services,Court reporting,Yes,Yes,Yes,Yes,56149200_27309200_00000000,"Transcribes spoken or recorded speeches into written form, typically for court proceedings or depositions."
+Legal Services,Document preparation,Yes,Yes,Yes,Yes,56141000_23101200_00000000,"Prepares documents, including presentations, word processing, and typing services, and may proofread completed documents."
+Legal Services,Expert witness services,Yes,Yes,Yes,Yes,54119900_19409200_00000000,"Provides expert knowledge on particular subjects, often testifying at court proceedings."
+Legal Services,Insurance inspector,Yes,Yes,Yes,Yes,52429800_13103100_02000000,Performs residential or commercial building insurance inspection services for replacement cost valuation or condition assessment.
+Legal Services,Lawyers office,No,No,Yes,No,54111000_23101100_02000000,"Works in an office maintained by a lawyer or a firm of lawyers, practicing or studying law."
+Legal Services,Legal services,Yes,No,Yes,No,54111000_23101100_03000000,"Provides administrative or support services related to legal matters, such as document preparation, notary, process serving, or legal research, but does not offer legal advice or representation."
+Legal Services,Notary services,Yes,Yes,Yes,Yes,54112000_23209900_00000000,Serves as a witness to attest to the validity of signatures and authenticate documents as a notary.
+Legal Services,Process server,Yes,Yes,Yes,Yes,54119900_23209900_00000000,Delivers legal notices to individuals on behalf of a court as a process server.
+Legal Services,Title abstracter,No,No,Yes,No,54119100_23209300_00000000,"Prepares and certifies the condensed history of property ownership, including deeds, liens, and tax forms."
+Legal Services,Trustee services,Yes,No,Yes,Yes,52399100_23209900_00000000,"Holds, manages, or invests assets for the benefit of another person as a trustee."
+Marketing/PR,Advertising,Yes,Yes,Yes,Yes,54181000_41301100_00000000,Creates marketing communications designed to persuade audiences to buy products or services.
+Marketing/PR,Brand consultant,Yes,Yes,Yes,Yes,54161300_13116100_01000000,"Provides analysis, solutions, and marketing expertise to enhance a company's brand and increase sales."
+Marketing/PR,Communications/media/public relations,No,No,Yes,Yes,54182000_27303100_01000000,"Develops and manages communication strategies, media relations, and public messaging to shape public perception and maintain a positive image for clients or organizations."
+Marketing/PR,Digital marketing,Yes,Yes,Yes,Yes,54161300_13116100_02000000,"Helps companies sell services or products through advertising on the internet, mobile devices, and social media."
+Marketing/PR,Direct marketing,Yes,Yes,Yes,Yes,54186000_13116100_00000000,"A consulting or agency service that helps clients define target audiences, develop strategies, and execute campaigns—often via direct mail, email, or similar channels."
+Marketing/PR,Image consulting,No,No,Yes,Yes,54182000_27303100_02000000,"Advises businesses and individuals on cultivating a professional or updated appearance, including communication skills and behavior."
+Marketing/PR,Market research,Yes,Yes,Yes,Yes,54191000_13116100_00000000,Collects and analyzes data about target markets or competitors to inform business decisions.
+Marketing/PR,Marketing/media consulting,Yes,Yes,Yes,Yes,54161300_13116100_03000000,Works with companies to create and implement marketing strategies that improve sales of products or services.
+Marketing/PR,Other marketing/PR services,Yes,Yes,Yes,Yes,54161300_13116100_04000000,"Offers advice to companies on marketing, public relations, market research, product development, and branding strategies."
+Marketing/PR,Public relations,Yes,Yes,Yes,Yes,54182000_27303100_03000000,Crafts media releases and develops social media programs to shape public perception and maintain a favorable public image.
+Marketing/PR,Search engine services (SEO/SEM),Yes,Yes,Yes,Yes,54161400_13116100_00000000,Provides advice to companies on improving website performance by analyzing web traffic data and identifying online trends.
+Marketing/PR,Social media consultant,Yes,Yes,Yes,Yes,54161300_13116100_05000000,"Advises companies and individuals on using social media for advertising, marketing, or brand creation."
+Medical & Dental Offices,Allergists Offices,No,No,Yes,Yes,62111100_29122900_01000000,"Works in the office of an allergist, a physician trained to diagnose, treat, and manage allergies."
+Medical & Dental Offices,Cardiologists Offices,No,No,Yes,Yes,62111100_29121200_00000000,"Works in the office of a cardiologist, a doctor specializing in heart and blood vessel diseases."
+Medical & Dental Offices,Chiropractor,No,No,Yes,Yes,62131000_29101100_00000000,"Focuses on diagnosing and treating musculoskeletal issues, particularly those related to the spine."
+Medical & Dental Offices,Dental Hygienist,No,No,Yes,Yes,62139900_29129200_00000000,"Cleans teeth, takes dental x-rays, and provides related dental care as a trained and licensed dental hygienist."
+Medical & Dental Offices,Dental Laboratories,No,No,Yes,Yes,33911600_29201100_00000000,"Prepares, constructs, assembles, or fills orders for dental models and appliances in a dental laboratory."
+Medical & Dental Offices,Dentists Office,No,No,Yes,Yes,62121000_29102100_00000000,"Works in the office of a dentist, specializing in dental care and treatment."
+Medical & Dental Offices,Dermatologists Offices,No,No,Yes,Yes,62111100_29121300_00000000,"Works in the office of a dermatologist, specializing in skin health and treatment."
+Medical & Dental Offices,Diagnostic imaging/X-ray centers,No,No,Yes,Yes,62151200_29201100_00000000,Takes images and x-rays to create visual representations of the interior of a body for clinical analysis and medical intervention.
+Medical & Dental Offices,"Ear, Nose, & Throat Offices",No,No,Yes,Yes,62111100_29122900_02000000,"Works in the office of an ear, nose, and throat (ENT) specialist, assisting with diagnosis and treatment of related conditions."
+Medical & Dental Offices,Endocrinologists Offices,No,No,Yes,Yes,62111100_29122900_03000000,"Supports endocrinologists in their offices, focusing on the diagnosis and treatment of endocrine gland and hormone disorders."
+Medical & Dental Offices,Gastroenterologist Offices,No,No,Yes,Yes,62111100_29122900_04000000,Assists gastroenterologists in offices specializing in digestive system health and treatment.
+Medical & Dental Offices,General Practitioners Offices,No,No,Yes,Yes,62111100_29121500_01000000,"Works in the office of a general practitioner, providing family medicine services."
+Medical & Dental Offices,Geriatric Specialists Offices,No,No,Yes,Yes,62111100_29122900_05000000,Supports geriatric specialists in caring for the health and well-being of senior adults.
+Medical & Dental Offices,Gynecologists Offices,No,No,Yes,Yes,62111100_29121800_01000000,Assists gynecologists and obstetricians in offices focused on women's reproductive health.
+Medical & Dental Offices,Health Practitioners Office,No,No,Yes,Yes,62139900_29122900_00000000,"Works in the office of a health practitioner, providing general family medicine services."
+Medical & Dental Offices,Hematologists Offices,No,No,Yes,Yes,62111100_29122900_06000000,"Supports hematologists in diagnosing and treating blood, blood-forming organs, and blood diseases."
+Medical & Dental Offices,Internists Offices,No,No,Yes,Yes,62111100_29121600_00000000,Assists internists in offices specializing in primary care screening and treatment of common adult health problems.
+Medical & Dental Offices,Medical doctor/physician,No,No,Yes,Yes,62111100_29121500_02000000,"Works in the office of a medical doctor or physician, providing general medical care."
+Medical & Dental Offices,Medical Laboratories,No,No,Yes,Yes,62151100_29201100_00000000,Supports medical laboratories by taking images and x-rays for clinical analysis and medical intervention.
+Medical & Dental Offices,Nephrologists Offices,No,No,Yes,Yes,62111100_29122900_07000000,Assists nephrologists in offices focused on kidney health and treatment.
+Medical & Dental Offices,Neurologists Offices,No,No,Yes,Yes,62111100_29121700_00000000,Supports neurologists in diagnosing and treating brain and nervous system disorders.
+Medical & Dental Offices,Obstetricians Offices,No,No,Yes,Yes,62111100_29121800_02000000,"Works in the office of an obstetrician or gynecologist, specializing in women's health and reproductive care."
+Medical & Dental Offices,Oncologists Offices,No,No,Yes,Yes,62111100_29122900_08000000,Assists oncologists in offices focused on cancer diagnosis and treatment.
+Medical & Dental Offices,Ophthalmologists Offices,No,No,Yes,Yes,62111100_29124100_00000000,"Supports ophthalmologists in providing comprehensive eye care, including diagnosis, treatment, surgery, and vision correction."
+Medical & Dental Offices,Optometrist/Ophthalmologist,No,No,Yes,Yes,62132000_29104100_00000000,"Specializes in eye care as an optometrist or ophthalmologist, providing medical and vision services."
+Medical & Dental Offices,Oral Surgeons Offices,No,No,Yes,Yes,62121000_29102200_01000000,"Works in the office of an oral surgeon, specializing in surgical dental procedures."
+Medical & Dental Offices,Orthodontist/Periodontist/Oral surgeon,No,No,Yes,Yes,62121000_29102200_02000000,"Supports orthodontists, periodontists, and oral surgeons in providing specialized dental care."
+Medical & Dental Offices,Orthodontists Offices,No,No,Yes,Yes,62121000_29102300_00000000,Supports orthodontists providing specialized dental care.
+Medical & Dental Offices,Orthopedic Surgeons Offices,No,No,Yes,Yes,62111100_29124200_00000000,Assists orthopedic surgeons in offices focused on joint and muscle health.
+Medical & Dental Offices,Osteopaths Offices,No,No,Yes,Yes,62111100_29122900_09000000,"Supports osteopaths in providing care for joints, muscles, and the spine."
+Medical & Dental Offices,Pediatricians Offices,No,No,Yes,Yes,62111100_29122100_00000000,"Works in the office of a pediatrician, specializing in children's health."
+Medical & Dental Offices,Physicians Office,No,No,Yes,Yes,62111100_29122900_10000000,Assists physicians in providing general or family medicine services.
+Medical & Dental Offices,Podiatrist,No,No,Yes,Yes,62139100_29108000_00000000,Specializes in foot and ankle care as a podiatrist.
+Medical & Dental Offices,Primary Care Offices,No,No,Yes,Yes,62111100_29121500_03000000,"Works in the office of a primary care provider, offering general and family medicine services."
+Medical & Dental Offices,Psychiatrists Offices,No,No,Yes,Yes,62111200_29122300_00000000,"Medical offices specializing in the diagnosis, treatment, and management of mental health disorders by licensed psychiatrists, including medication management and psychotherapy."
+Medical & Dental Offices,Psychologists Offices,No,No,Yes,Yes,62133000_19303300_00000000,"Offices of licensed psychologists providing psychological assessment, counseling, and therapy services for individuals, couples, or groups, without prescribing medication."
+Medical & Dental Offices,Pulmonologists Offices,No,No,Yes,Yes,62111100_29122900_11000000,"Supports pulmonologists in diagnosing and treating respiratory tract, airway, lung, and respiratory muscle conditions."
+Medical & Dental Offices,Surgeons Offices,No,No,Yes,Yes,62111100_29124900_00000000,"Works in the office of a surgeon, providing support for various surgical specialties."
+Medical & Dental Offices,Urologists Offices,No,No,Yes,Yes,62111100_29122900_12000000,Assists urologists in offices focused on urinary tract and male reproductive system health.
+Miscellaneous,Alumni non profit,No,No,No,Yes,81341000_11203300_00000000,Works for a non-profit organization focused on fundraising for an alma mater.
+Miscellaneous,Answering/paging services,Yes,Yes,Yes,Yes,56142100_43201100_00000000,Provides switchboard operations and answering services for businesses and individuals.
+Miscellaneous,Auctioneering,Yes,Yes,Yes,Yes,45439000_41909900_00000000,"Conducts auctions, buying and selling goods or property through a bidding process to secure the best price for clients."
+Miscellaneous,Business manager services,Yes,Yes,Yes,Yes,56149900_13101100_00000000,"Manages and runs multiple aspects of a client’s affairs, including planning, operations, marketing, and financial matters as a business manager."
+Miscellaneous,Business non profit,No,No,Yes,Yes,81391000_11203300_01000000,"Works for a not-for-profit organization formed for charitable, literary, artistic, scientific, or educational purposes."
+Miscellaneous,Chamber of commerce,No,No,Yes,Yes,81391000_11915100_00000000,"Participates in a chamber of commerce, an association or network of business people designed to promote and protect members’ interests."
+Miscellaneous,Charitable foundation,No,No,Yes,Yes,81321100_11203300_00000000,"Operates a private, non-profit charitable foundation with objectives centered on philanthropy and social well-being."
+Miscellaneous,Civic non profit,No,No,Yes,Yes,81391000_11203300_02000000,"Non-profit organizations focused on civic, community, or public benefit activities, such as advocacy, education, or volunteer services, typically funded by donations or grants."
+Miscellaneous,Delivery service providers,No,No,No,Yes,49221000_11101100_00000000,Provides delivery and courier services for consumers and businesses.
+Miscellaneous,Event planning/promotion,Yes,Yes,No,Yes,81299000_13112100_00000000,"Plans, promotes, budgets, schedules, coordinates, and conducts events such as weddings, festivals, parties, or corporate events."
+Miscellaneous,Executive placement,Yes,Yes,Yes,Yes,56131200_13107100_00000000,Finds and identifies individuals for employment on behalf of companies or individuals as an executive placement specialist.
+Miscellaneous,Funeral homes,No,No,Yes,Yes,81221000_11101100_00000000,Provides interment and funeral services for the deceased and their families at funeral homes.
+Miscellaneous,Insurance agent association,No,No,Yes,Yes,81391000_11102100_00000000,"Professional organizations or associations that support, represent, or provide resources for insurance agents and brokers."
+Miscellaneous,Learning center,Yes,Yes,Yes,Yes,61169100_25304100_01000000,Offers instruction and education on various topics or vocations at learning centers.
+Miscellaneous,Learning center - test prep,Yes,Yes,Yes,Yes,61169100_25304100_02000000,"Offers courses and tutoring focused on preparing students for standardized tests, entrance exams, or professional certifications."
+Miscellaneous,Library,No,No,Yes,Yes,51912000_11101100_00000000,"Works in a library, managing the lending and rental of books, magazines, and DVDs."
+Miscellaneous,Life/career/executive coaching,Yes,Yes,Yes,Yes,54161100_11101100_00000000,"Offers life, career, or executive coaching, providing advice on personal matters but not mental health, medical, marriage, social work, or substance abuse counseling."
+Miscellaneous,Manufacturer sales representative,Yes,Yes,Yes,Yes,42512000_41401200_00000000,Sells products of one or more manufacturers on a commission basis as a manufacturer sales representative.
+Miscellaneous,Offices - NOC - High hazard,No,No,No,No,56111000_11102100_01000000,Works in offices not otherwise mentioned that are considered high hazard.
+Miscellaneous,Offices - NOC - Low hazard,No,No,No,No,56111000_11102100_02000000,Works in offices not otherwise mentioned that are considered low hazard.
+Miscellaneous,Offices - NOC - Medium hazard,No,No,No,No,56111000_11102100_03000000,Works in offices not otherwise mentioned that are considered medium hazard.
+Miscellaneous,Packaging services,No,No,No,Yes,56191000_53706400_00000000,Performs packing or packaging by hand for a wide variety of products and materials.
+Miscellaneous,Personal concierge/assistant,Yes,Yes,Yes,Yes,81299000_39601200_00000000,"Manages aspects of an individual’s personal affairs, including planning and assisting with daily personal tasks as a concierge or assistant."
+Miscellaneous,Professional non profit,No,No,Yes,Yes,81391000_11203300_03000000,"Works for a professional non-profit organization, supporting professionals in various fields."
+Miscellaneous,Professional training,Yes,Yes,Yes,Yes,61143000_25119900_00000000,"Delivers training programs, workshops, or seminars to enhance professional skills, knowledge, or certifications for individuals or organizations."
+Miscellaneous,Radio station (no antenna/tower),No,No,No,Yes,51511200_11102100_01000000,"Operates a radio station for the production and transmission of AM or FM broadcasts, which may include music, talk shows, or navigation."
+Miscellaneous,Recruiting (employment placements),Yes,Yes,Yes,Yes,56131100_13107100_00000000,"Finds and identifies individuals for employment on behalf of companies or individuals as a recruiter, without leased employees or temporary staff."
+Miscellaneous,Services - NOC - High hazard,No,No,No,No,81299000_11919900_01000000,Offers services not otherwise mentioned that are considered high hazard.
+Miscellaneous,Services - NOC - Low hazard,No,No,No,No,81299000_11919900_02000000,Offers services not otherwise mentioned that are considered low hazard.
+Miscellaneous,Services - NOC - Medium hazard,No,No,No,No,81299000_11919900_03000000,Offers services not otherwise mentioned that are considered medium hazard.
+Miscellaneous,Stenographer/Secretarial services,No,No,Yes,Yes,56141000_42902200_00000000,"Transcribes speech in shorthand, usually in court, as a stenographer or secretarial service provider."
+Miscellaneous,Talent agency,Yes,Yes,Yes,Yes,71141000_13101100_00000000,"A talent agency represents individuals by arranging and negotiating engagements or work opportunities on their behalf, acting as an intermediary without directly employing the talent or producing the underlying work."
+Miscellaneous,Taxidermists,No,No,Yes,Yes,71151000_27101900_00000000,"Prepares and preserves animal skins, stuffing and mounting them into lifelike forms as a taxidermist."
+Miscellaneous,Telemarketer,No,No,Yes,Yes,56142200_41904100_00000000,Practices direct marketing by soliciting prospective customers to buy products or services as a telemarketer.
+Miscellaneous,Ticket agency,No,No,Yes,Yes,56159900_43418100_00000000,"Sells tickets for theater, cinema, transportation, or entertainment at a ticket agency."
+Miscellaneous,Trade Association non profit,No,No,Yes,Yes,81391000_11203300_04000000,"Participates in a trade association created to protect and advance common interests for tradesmen, businessmen, or manufacturers in a particular industry."
+Miscellaneous,Training & development consulting,Yes,Yes,Yes,Yes,61143000_13115100_00000000,"Offers instruction and education on business, vocational, or life skills."
+Miscellaneous,"Training (business, vocational or life skills)",Yes,Yes,Yes,Yes,61169900_13115100_01000000,Provides instruction and education on various topics or vocations.
+Miscellaneous,Translating/interpreting,Yes,Yes,Yes,Yes,54193000_27309100_00000000,Interprets the meaning of text or speech in one language and provides the equivalent meaning in another as a translator or interpreter.
+Miscellaneous,Travel agency,Yes,Yes,Yes,Yes,56151000_41304100_00000000,"Sells travel-related products to individuals or businesses on behalf of travel suppliers, such as airlines or hotels, and coordinates providers, bookings, and payments."
+Miscellaneous,Tutoring,Yes,Yes,Yes,Yes,61169100_25309900_00000000,"Provides instruction and education on various topics or vocations as a tutor, excluding physical training, animal training, or aviation training."
+Mobile Food Services,Barbecue truck/trailer operator,Yes,No,No,Yes,72233000_11101100_01000000,"Operates a barbecue truck or trailer, providing barbecue food or service to customers."
+Mobile Food Services,Catering services,No,No,No,Yes,72232000_11101100_00000000,"Offers catering services for events such as weddings or conferences, including menu planning, cooking, and food presentation."
+Mobile Food Services,Coffee/donut cart operator,Yes,No,No,Yes,72233000_11101100_02000000,Prepares and serves donuts and coffee for immediate consumption from motorized vehicles or non-motorized carts.
+Mobile Food Services,Food truck/trailer operator,Yes,No,No,Yes,72233000_11101100_03000000,"Prepares and serves food for immediate consumption from food trucks or trailers, whether motorized or not."
+Mobile Food Services,Food/beverage cart operator,Yes,No,No,Yes,72233000_11101100_04000000,"Prepares and serves food and beverages for immediate consumption from carts or trucks, including both motorized and non-motorized options."
+Mobile Food Services,Hot dog cart operator,Yes,No,No,Yes,72233000_11101100_05000000,Specializes in preparing and serving hotdogs for immediate consumption from carts or trucks.
+Mobile Food Services,Ice cream truck operator,Yes,No,No,Yes,72233000_11101100_06000000,Prepares and serves ice cream for immediate consumption from trucks or carts.
+Mobile Food Services,Ice cream/snow cone/shaved ice cart operator,Yes,No,No,Yes,72233000_11101100_07000000,"Offers frozen desserts such as ice cream, snow cones, or shaved ice from trucks or carts."
+Mobile Food Services,Lemonade cart operator,Yes,No,No,Yes,72233000_11101100_08000000,Prepares and serves lemonade for immediate consumption from mobile carts or vehicles.
+Mobile Food Services,Mobile food concessions,Yes,No,No,Yes,72233000_11101100_09000000,"Operates mobile food concessions, preparing and serving food for immediate consumption from vehicles or carts."
+Mobile Food Services,Mobile food services,Yes,No,No,Yes,72233000_11101100_10000000,"Provides mobile food services, preparing and serving food for immediate consumption from vehicles or carts."
+Mobile Food Services,Mobile food vending services,Yes,No,No,Yes,72233000_11101100_11000000,"Engages in mobile food vending, preparing and serving food for immediate consumption from vehicles or carts."
+Mobile Food Services,Mobile kitchen operator,Yes,No,No,Yes,72233000_11101100_12000000,"Operates a mobile kitchen, preparing and serving food for immediate consumption from vehicles or carts."
+Mobile Food Services,Mobile street food vendor,Yes,No,No,Yes,72233000_11101100_13000000,"Sells street food from mobile vehicles or carts, preparing and serving food for immediate consumption."
+Mobile Food Services,Refreshment Stand with or w/o Cooking,No,No,No,Yes,72221100_11101100_02000000,"Operates a refreshment stand, serving prepared refreshments for immediate consumption from vehicles or carts."
+Mobile Food Services,Refreshment Stands,No,No,No,Yes,72221300_11101100_00000000,Prepares and serves snacks for immediate consumption from trucks or carts.
+Mobile Food Services,Snack truck operator,Yes,No,No,Yes,72233000_11101100_14000000,Offers snacks and nonalcoholic beverages for immediate consumption from vehicles or carts.
+Mobile Food Services,"Snack, Nonalcoholic Beverages Stands",No,No,No,Yes,72233000_11101100_15000000,"Runs a refreshment stand, serving snacks and drinks for immediate consumption from vehicles or carts."
+Pet Care Services,Kennels (Boarding),No,No,No,Yes,81291000_39202000_01000000,"Provides pet boarding services, allowing pet owners to leave their pets in care for overnight or extended stays."
+Pet Care Services,Other veterinarian services,No,No,Yes,Yes,54194000_29113100_01000000,"Provides additional animal healthcare services beyond standard veterinary care, such as specialized treatments, preventive care, or alternative therapies for pets and other animals."
+Pet Care Services,Pet daycare,No,No,No,Yes,81291000_39202000_02000000,"Offers short-term daytime care for pets, providing supervision, socialization, and activities while owners are away during the day."
+Pet Care Services,Pet grooming,No,No,No,Yes,81291000_39202000_03000000,"Specializes in pet grooming, offering hygienic care and cleaning, and may enhance appearance for shows or competitions."
+Pet Care Services,Pet Grooming Services - Mobile,No,No,No,Yes,81291000_39202000_04000000,"Delivers pet grooming services directly to clients’ locations using a mobile unit, offering convenience for pet owners and minimizing stress for animals during grooming."
+Pet Care Services,Pet Motel/Hotel,No,No,No,Yes,81291000_39202000_05000000,"Provides pet motel or hotel services, allowing pet owners to leave their pets in care for overnight or extended stays."
+Pet Care Services,Pet sitting,No,No,No,Yes,81291000_39202000_06000000,"Offers pet sitting services, caring for pets in the owner's home while they are away."
+Pet Care Services,Pet supply store,No,No,No,Yes,45391000_11101100_00000000,"Sells a variety of animal supplies and pet accessories, including food, treats, toys, aquariums, leashes, and cat litter."
+Pet Care Services,Pet Training,No,No,No,Yes,81291000_39201100_00000000,"Teaches and trains animals discipline and tricks, using knowledge of animal behavior and practical teaching skills."
+Pet Care Services,Veterinary Services - Domestic Only,No,No,Yes,Yes,54194000_29113100_02000000,"Delivers veterinary services for domestic animals, providing treatments, cures, and preventive measures for diseases."
+Pet Care Services,Veterinary Services - Large Animals Only,No,No,Yes,Yes,54194000_29113100_03000000,"Provides veterinary care for large animals, offering treatments, cures, and preventive measures for diseases."
+Pet Care Services,Veterinary Services - Mixed (Domestic and Large) Animals,No,No,Yes,Yes,54194000_29113100_04000000,"Offers veterinary services for both domestic and large animals, including treatments, cures, and disease prevention."
+Printer & Publishers,Book Printing,No,No,Yes,Yes,32311700_51511200_00000000,Binds books by assembling and securing handwritten or printed pages within a cover.
+Printer & Publishers,Book publishing (no printing),No,No,Yes,Yes,51113000_51511300_01000000,"Handles book publishing without printing, including copy editing, production, electronic formatting, marketing, and distribution."
+Printer & Publishers,Bookbinding & Related Work,No,No,Yes,Yes,32312000_51511300_00000000,"Binds books and performs related work, assembling and securing pages within a cover."
+Printer & Publishers,Business Forms Printing,No,No,Yes,Yes,32311600_51511200_00000000,Prints business forms for various commercial uses.
+Printer & Publishers,Commercial Printing - Lithography,No,No,Yes,Yes,32311100_51511200_01000000,"Produces images or writing on flat, specially prepared stones using lithography techniques."
+Printer & Publishers,Commercial Printing - Prepress Services,No,No,Yes,Yes,32312000_51511100_01000000,"Provides technical preparation of digital files and materials for commercial printing, including layout, typesetting, color correction, proofing, and plate making."
+Printer & Publishers,Copy Shops,No,No,Yes,Yes,56143900_43907100_01000000,Makes copies from physical or electronic documents at a copy shop.
+Printer & Publishers,Digital Printing,No,No,Yes,Yes,32311100_51915100_00000000,"Provides digital printing services, transferring digital images to various media."
+Printer & Publishers,Film Processing,No,No,Yes,Yes,81292100_51915100_01000000,Processes photographs from film or digital files into prints or other media.
+Printer & Publishers,Mail Box & Packaging Services,No,No,Yes,Yes,56143100_53706400_00000000,"Offers mailbox and packaging services, providing mailing addresses and packaging products or materials by hand."
+Printer & Publishers,Newspaper publishing (no printing),No,No,Yes,Yes,51111000_51511300_01000000,"Publishes newspapers without printing, handling copy editing, production, formatting, marketing, and distribution."
+Printer & Publishers,Other Commercial Printing Services,No,No,Yes,Yes,32311100_51511200_02000000,"Offers specialized or custom printing services not classified elsewhere, may include specialty items for commercial clients."
+Printer & Publishers,Periodical publishing (no printing),No,No,Yes,Yes,51112000_51511200_01000000,"Publishes periodicals without printing, managing copy editing, production, formatting, marketing, and distribution."
+Printer & Publishers,Photo Engraving,No,No,Yes,Yes,32312000_51511100_02000000,Provides photo engraving services as prepress technicians and workers.
+Printer & Publishers,Photo Finishing (One-Hour),No,No,Yes,Yes,81292200_51915100_01000000,"Offers quick photo finishing services, processing photographs rapidly."
+Printer & Publishers,Photocopying and duplicating services,No,No,Yes,Yes,56143900_43907100_02000000,"Operates photocopying and duplicating services, using machines to duplicate documents for clients."
+Printer & Publishers,Photofinishing Laboratories,No,No,Yes,Yes,81292100_51915100_02000000,"Runs photofinishing laboratories, processing photographs and operating processing machines."
+Printer & Publishers,Printing Support Activities,No,No,Yes,Yes,32312000_51511200_00000000,"Supports printing activities, including operation of printing presses."
+Printer & Publishers,Publishers - Database,No,No,Yes,Yes,51913000_51511300_00000000,"Publishes databases, transforming unformatted data into formatted publications using software."
+Printer & Publishers,Publishers - Greeting Cards,No,No,Yes,Yes,51119100_51511300_00000000,"Publishes greeting cards, handling copy editing, production, formatting, printing, marketing, and distribution."
+Printer & Publishers,Publishers - Magazine,No,No,Yes,Yes,51112000_51511300_00000000,"Publishes magazines, managing copy editing, production, formatting, printing, marketing, and distribution."
+Printer & Publishers,Publishing (including printing),No,No,Yes,Yes,51119900_51511300_01000000,"Handles publishing, including printing, for magazines, books, and periodicals."
+Printer & Publishers,Quick Printing,No,No,Yes,Yes,32311100_51511200_03000000,"Provides quick printing services, including printing, binding, and finishing documents for fast turnaround."
+Printer & Publishers,Screen printing,No,No,Yes,Yes,32311300_51511200_00000000,Specializes in screen printing graphics and images on various materials.
+Real Estate,Property management,Yes,Yes,No,Yes,53131100_11914100_00000000,"Manages property, real estate, and community associations, often overseeing operations, maintenance, and tenant relations."
+Real Estate,Real estate agent/broker,Yes,Yes,Yes,Yes,53121000_41902100_00000000,"Mediates real estate transactions between buyers and sellers, and may match tenants and landlords for rental vacancies as a real estate agent or broker."
+Real Estate,Real estate appraisers,No,No,Yes,Yes,53132000_13202300_00000000,"Estimates the value of commercial or residential real estate before it is sold, mortgaged, taxed, or developed as a real estate appraiser."
+Restaurant & Food Service,Bagel Shops,No,No,Yes,Yes,72251500_11101100_01000000,Bakes and sells bagels at a dedicated shop.
+Restaurant & Food Service,Bakery shops,No,No,Yes,Yes,72251300_51301100_00000000,"Prepares and sells baked goods such as bread, cookies, cakes, and pastries, and may also serve beverages like coffee and tea at a bakery shop."
+Restaurant & Food Service,Burrito and Taco Shops,No,No,No,Yes,72221100_11101100_01000000,Cooks and sells tacos and burritos at a dedicated shop.
+Restaurant & Food Service,Coffee Bars or Cafés,No,No,Yes,Yes,72251500_11101100_02000000,"Brews and serves coffee, and may offer tea and light refreshments at a coffee bar or café."
+Restaurant & Food Service,Coffee shops,No,No,Yes,Yes,72251500_11101100_03000000,"Operates a coffee shop, brewing and serving coffee, tea, and light refreshments."
+Restaurant & Food Service,Delis and Delicatessens,No,No,Yes,Yes,72251300_11101100_01000000,"Sells cooked meats, cheeses, and prepared foods such as sandwiches and salads at a deli or delicatessen."
+Restaurant & Food Service,Donut shops,No,No,Yes,Yes,72251300_11101100_02000000,"Bakes or fries and sells donuts and other baked goods, sometimes serving coffee and tea at a donut shop."
+Restaurant & Food Service,Frozen Yogurt Shops,No,No,Yes,Yes,72251500_11101100_05000000,Serves and sells frozen yogurt at a dedicated shop.
+Restaurant & Food Service,Ice cream and frozen yogurt shops,No,No,Yes,Yes,72251500_11101100_06000000,Offers both ice cream and frozen yogurt for sale at a shop.
+Restaurant & Food Service,Ice Cream Shops,No,No,Yes,Yes,72251500_11101100_07000000,Specializes in serving and selling ice cream at a dedicated shop.
+Restaurant & Food Service,Juice bars,No,No,Yes,Yes,72251500_11101100_08000000,Serves and sells juice and smoothies at a juice bar.
+Restaurant & Food Service,"Limited Service Restaurant With Alcohol <75% Of Total Receipts, w/o Dance Floor",No,No,No,No,72251100_11101100_00000000,"Operates a limited service restaurant with alcohol (less than 75% of total receipts) and no dance floor, providing counter service."
+Restaurant & Food Service,"Limited Service Restaurant No Alcohol, w/o Dance Floor",No,No,No,Yes,72251300_11101100_03000000,"Runs a limited service restaurant with no alcohol and no dance floor, providing counter service."
+Restaurant & Food Service,Pizza Parlors & Delis - No Table Service,No,No,No,Yes,72251300_11101100_04000000,"Serves and sells pizza and sandwiches at a counter, with no table service at a pizza parlor or deli."
+Restaurant & Food Service,Refreshment Stands (Non-Alcoholic),No,No,No,Yes,72251500_11101100_11000000,"Operates a refreshment stand, serving pre-made snacks and non-alcoholic drinks."
+Restaurant & Food Service,Sandwich Shops,No,No,Yes,Yes,72251300_11101100_05000000,Sells prepared foods such as sandwiches and salads at a sandwich shop.
+Restaurant & Food Service,Self Service with or w/o Cooking,No,No,No,Yes,72251500_11101100_12000000,"Offers self-service food and beverages, such as salads or frozen yogurt, with or without cooking."
+Restaurant & Food Service,Smoothie bars,No,No,Yes,Yes,72251500_11101100_13000000,Serves and sells smoothies and other juice drinks at a smoothie bar.
+Retail,Appliance/electronic stores,Yes,No,No,Yes,44314100_11101100_00000001,Sells appliances and electronics for household and commercial use at dedicated stores.
+Retail,Art Dealers or Galleries,No,No,Yes,Yes,45392000_11101100_00000000,"Buys, sells, and displays artwork at art dealers or galleries."
+Retail,"Art, Craft & Hobby Supply Stores",No,No,Yes,Yes,45399800_11101100_00000001,"Offers art, craft, and hobby supplies for sale."
+Retail,"Art, Picture, & Poster Stores",No,No,Yes,Yes,44229900_11101100_00000001,"Sells art, pictures, and photographs at specialized stores."
+Retail,Athletic Footwear Stores,No,No,Yes,Yes,44815000_11101100_00000001,"Provides athletic footwear, including sneakers and shoes for sports and active wear."
+Retail,Automotive Parts & Accessories Stores,No,No,No,Yes,44131000_11101100_00000000,"Sells new or used automotive parts, accessories, and related products for vehicles, including batteries, tires, audio equipment, and replacement components."
+Retail,Balloon Shops,No,No,Yes,Yes,45322000_11101100_00000001,"Sells balloons for parties, events, and celebrations."
+Retail,"Bath, Chinaware & Glassware Shops",No,No,Yes,Yes,44229900_11101100_00000002,"Offers bathroom products, accessories, china, and glassware at specialty shops."
+Retail,Bedding Stores,No,No,Yes,Yes,44229900_11101100_00000003,Sells bedding and bedroom accessories at bedding stores.
+Retail,Beverage Store - Beer and Wine,No,No,No,No,44531000_11101100_00000000,Specializes in beer and wine sales at beverage stores.
+Retail,Beverage Stores - Soft Drinks,No,No,Yes,Yes,44529900_11101100_00000001,Offers soft drinks for sale at beverage stores.
+Retail,Book & Magazine Stores,No,No,Yes,Yes,45121100_11101100_00000000,Sells books and magazines at dedicated retail locations.
+Retail,Bottled Water Stores,No,No,Yes,Yes,44529900_11101100_00000002,Provides bottled water for sale at specialty stores.
+Retail,Bridal Shops,No,No,Yes,Yes,44819000_11101100_00000001,"Sells bridal gowns, veils, shoes, and accessories at bridal shops."
+Retail,Butcher Shops,No,No,No,No,44521000_51302200_00000000,Prepares and sells meat and poultry at butcher shops.
+Retail,Camera & Photo Equipment Stores,No,No,No,Yes,44314200_11101100_00000001,"Sells and services cameras, lenses, and photo equipment at camera and photo equipment stores."
+Retail,Candle Shops,No,No,Yes,Yes,45399800_11101100_00000002,Offers candles for sale at candle shops.
+Retail,Candy & Confectionery Stores,No,No,Yes,Yes,44529200_11101100_00000001,Sells candy and chocolates at confectionery stores.
+Retail,Cell Phone stores,No,No,No,Yes,44314200_11101100_00000002,"Provides cell phones and accessories, and may offer repair services at cell phone stores."
+Retail,Cheese Shops,No,No,Yes,Yes,44529900_11101100_00000003,Sells cheese and related food products at cheese shops.
+Retail,Children's & Infants Clothing Stores,No,No,Yes,Yes,44813000_11101100_00000000,"Offers clothing and accessories for babies, infants, and toddlers at children’s and infants’ clothing stores."
+Retail,"China, Ceramic, & Pottery Stores",No,No,Yes,Yes,44229900_11101100_00000004,"Sells fine china, ceramics, and pottery items at specialty stores."
+Retail,Christmas Stores,No,No,Yes,Yes,45322000_11101100_00000002,Provides Christmas and holiday decorations and accessories at Christmas stores.
+Retail,Church Supply Stores,No,No,Yes,Yes,42349000_11101100_00000000,Sells religious items and supplies used in church services at church supply stores.
+Retail,Clock Stores,No,No,Yes,Yes,44831000_11101100_00000001,Offers clocks for sale and repair at clock stores.
+Retail,Clothing/apparel stores,Yes,No,Yes,Yes,44819000_11101100_00000002,"Sells clothing, apparel, and accessories at clothing/apparel stores."
+Retail,Coffee & Tea Stores,No,No,Yes,Yes,44529900_11101100_00000004,Provides coffee beans and tea for home use at coffee and tea stores.
+Retail,Collectibles: New Merchandise Only,No,No,Yes,Yes,45322000_11101100_00000003,Sells new collectible items at specialty collectibles stores.
+Retail,"Computer, Equipment & Software Retail",No,No,No,Yes,44314200_11101100_00000003,"Offers computers, peripheral equipment, and software for sale and service at computer, equipment, and software retail stores."
+Retail,Cookie shop,No,No,Yes,Yes,72251500_11101100_04000000,Sells cookies and other baked goods at cookie shops.
+Retail,"Cosmetic, Beauty Supply & Perfume Stores",No,No,Yes,Yes,44612000_11101100_00000000,"Offers cosmetics, makeup, and perfume at beauty supply and perfume stores."
+Retail,Cutlery & Flatware Stores,No,No,Yes,Yes,44229900_11101100_00000005,Sells kitchen knives and flatware at cutlery and flatware stores.
+Retail,"Dairy, Eggs, & Ice Cream Stores",No,No,No,Yes,44529900_11101100_00000005,"Provides ice cream, dairy products, and eggs at specialty food stores."
+Retail,Dance & Figure Skating Apparel Stores,No,No,Yes,Yes,44819000_11101100_00000003,Sells dance and figure skating apparel at dedicated stores.
+Retail,Drapery Stores,No,No,Yes,Yes,44229100_11101100_00000001,Offers draperies and curtains for windows.
+Retail,Drug Stores,No,No,No,No,44611000_11101100_00000000,"Sells prescription and over-the-counter medications, and may offer health, beauty, or convenience items."
+Retail,DVD & Video Stores,No,No,No,Yes,44314200_11101100_00000004,Sells or rents DVDs and videos.
+Retail,Electronics (Consumer) Stores,No,No,No,Yes,44314200_11101100_00000005,Offers consumer electronics and accessories for sale and service at electronics stores.
+Retail,Fabric Stores,No,No,Yes,Yes,45113000_11101100_00000001,Sells fabric and sewing supplies at fabric stores.
+Retail,Family Clothing Stores,No,No,Yes,Yes,44814000_11101100_00000001,Provides clothing and accessories for children and adults at family clothing stores.
+Retail,Fish & Seafood Markets,No,No,No,No,44521000_11101100_00000001,Sells fish and seafood at markets specializing in these products.
+Retail,Flags & Banners Shops,No,No,Yes,Yes,45399800_11101100_00000003,Offers flags and banners for sale at specialty shops.
+Retail,Floor Covering Stores,No,No,Yes,Yes,44221000_11101100_00000000,"Sells carpet, laminate, tile, vinyl, and other floor coverings."
+Retail,Florists,Yes,No,Yes,Yes,45311000_27102300_00000000,"Designs, arranges, and sells fresh or artificial flowers and floral products for events, gifts, or decorative purposes."
+Retail,Flower (Artificial) Stores,No,No,Yes,Yes,45399800_11101100_00000004,Sells artificial flowers at specialty flower stores.
+Retail,Formal Wear & Costume Rental,No,No,Yes,Yes,53228100_11101100_00000000,"Rents formal wear, such as tuxedos and costumes."
+Retail,Framing Shops,No,No,Yes,Yes,44229900_11101100_00000006,"Provides custom framing and mounting services for artwork, photographs, and memorabilia, including the sale of ready-made frames and related products."
+Retail,Fruit & Vegetable Markets,No,No,No,Yes,44522000_11101100_00000000,Offers fresh fruits and vegetables for sale at markets.
+Retail,Furniture & Fixture Stores,No,No,Yes,Yes,44211000_11101100_00000001,"Sells a variety of furniture and decorative fixtures, helping customers furnish and personalize their living or work spaces with items such as sofas, tables, chairs, and lighting."
+Retail,Furniture (Outdoor) Stores,No,No,Yes,Yes,44211000_11101100_00000002,"Specializes in outdoor furniture, offering products designed to withstand weather and enhance patios, gardens, or other exterior environments."
+Retail,General Merchandise Stores,No,No,Yes,Yes,45231900_11101100_00000001,"Provides a wide selection of general merchandise, including household goods, apparel, and seasonal items, catering to diverse customer needs in one location."
+Retail,"Gift, Greeting Card Novelty, & Souvenirs",No,No,Yes,Yes,45322000_11101100_00000004,"Offers gifts, greeting cards, souvenirs, and novelty items for special occasions, celebrations, or as keepsakes."
+Retail,Gourmet Food Stores,No,No,Yes,Yes,44529900_11101100_00000006,"Curates gourmet foods, providing specialty ingredients, artisanal products, and unique culinary items for food enthusiasts."
+Retail,"Grocery Stores < 15,000 sq ft",No,No,No,No,44511000_11101100_00000000,"Operates a grocery store under 15,000 square feet, supplying fresh produce, dairy, meat, and everyday essentials in a convenient neighborhood setting."
+Retail,Hardware Store,No,No,Yes,Yes,44413000_11101100_00000000,"Stocks hardware and home improvement products, supporting DIY projects, repairs, and renovations with tools, materials, and expert advice."
+Retail,Hat Stores,No,No,Yes,Yes,44815000_11101100_00000002,"Features a range of hats and headwear, from fashion accessories to functional pieces for various occasions and needs."
+Retail,Health & Personal Care Stores,No,No,Yes,Yes,44619100_11101100_00000000,"Provides health, beauty, and personal care products, including skincare, cosmetics, hygiene items, and wellness essentials."
+Retail,Hobby Supply Stores,No,No,Yes,Yes,45399800_11101100_00000005,"Supplies hobbyists with modeling kits, craft materials, and tools for building models, dioramas, and creative projects."
+Retail,Home Centers,No,No,No,No,44411000_11101100_00000000,"Offers tools, building materials, and household supplies for home construction, remodeling, and improvement projects."
+Retail,Home furnishing stores,Yes,No,Yes,Yes,44229900_11101100_00000007,"Sells home furnishings such as couches, tables, beds, and décor, helping customers create comfortable and stylish interiors."
+Retail,Household Appliance Stores,No,No,No,Yes,44314100_11101100_00000002,"Provides household appliances, including washers, dryers, refrigerators, and ovens, to equip homes with essential technology."
+Retail,Jewelry stores,Yes,No,Yes,Yes,44831000_11101100_00000002,"Specializes in jewelry, offering rings, necklaces, bracelets, and repair services for personal adornment and gifts."
+Retail,Kitchen Accessories Stores,No,No,Yes,Yes,44229900_11101100_00000008,"Stocks kitchen accessories like pots, pans, utensils, and gadgets to support cooking and meal preparation."
+Retail,Knives & Scissors Stores,No,No,Yes,Yes,44229900_11101100_00000009,"Offers knives and scissors for culinary, crafting, or household use, focusing on quality and durability."
+Retail,Lamps & Lighting Fixtures Stores,No,No,Yes,Yes,44229900_11101100_00000010,Features lighting fixtures and lamps to illuminate and enhance the ambiance of homes and offices.
+Retail,Lawn & Garden Equipment Stores,No,No,Yes,Yes,44422000_11101100_00000001,"Sells lawn and garden equipment, seeds, and supplies for landscaping, gardening, and outdoor maintenance."
+Retail,Leather Goods Stores,No,No,Yes,Yes,44832000_11101100_00000001,"Provides leather goods such as handbags, wallets, gloves, and belts, emphasizing craftsmanship and style."
+Retail,Lingerie Stores,No,No,Yes,Yes,44819000_11101100_00000004,"Specializes in lingerie, offering intimate apparel for comfort, support, and fashion."
+Retail,Luggage Stores,No,No,Yes,Yes,44832000_11101100_00000002,"Offers luggage, including suitcases, travel bags, and accessories, to meet the needs of travelers."
+Retail,Maternity Shops,No,No,Yes,Yes,44812000_11101100_00000001,Sells maternity clothing designed for comfort and style during pregnancy.
+Retail,Meat & Poultry Markets,No,No,No,No,44521000_11101100_00000002,"Retailers specializing in the sale of fresh, frozen, or processed meats and poultry products directly to consumers."
+Retail,Men's Clothing Stores,No,No,Yes,Yes,44811000_11101100_00000000,"Retail stores focused on selling men’s apparel and accessories, including suits, casual wear, outerwear, and related items."
+Retail,Musical Instrument & Supplies Stores,No,No,Yes,Yes,45114000_11101100_00000001,"Provides musical instruments and supplies, such as reeds, oil, and accessories, for musicians and music enthusiasts."
+Retail,Nursery & Garden Centers - Retail,No,No,Yes,Yes,44422000_11101100_00000002,"Sells plants, seeds, and gardening supplies to help customers cultivate and maintain gardens and landscapes."
+Retail,Nuts Shops,No,No,No,Yes,44529200_11101100_00000002,"Offers a variety of nuts for sale, sometimes preparing them on-site for freshness and flavor."
+Retail,Office Machinery/Equipment,No,No,Yes,Yes,53242000_11101100_00000000,"Sells office machines, equipment, and supplies to support business operations and productivity."
+Retail,Office Supplies & Stationery Stores,No,No,Yes,Yes,45321000_11101100_00000001,"Provides office supplies and stationery, including pens, notebooks, and organizational tools for work or school."
+Retail,Other Clothing Stores,No,No,Yes,Yes,44814000_11101100_00000002,"Sells miscellaneous goods, including food and drinks, that do not fit into other retail categories."
+Retail,Other stores (with food/drinks),Yes,No,Yes,Yes,45399800_11101100_00000006,"Offers miscellaneous goods, excluding food and drinks, providing a diverse selection of products."
+Retail,Other stores (without food/drinks),Yes,No,Yes,Yes,45399800_11101100_00000007,"Offers miscellaneous goods, excluding food and drinks, providing a diverse selection of products."
+Retail,Paint & Wallpaper Stores,No,No,Yes,Yes,44412000_11101100_00000000,"Stocks paint, wallpaper, and wallcovering supplies for home improvement and decorating projects."
+Retail,Party Goods Stores,No,No,Yes,Yes,45322000_11101100_00000005,"Sells party goods such as decorations, tableware, and accessories for celebrations and events."
+Retail,Piano & Organ Stores,No,No,Yes,Yes,45114000_11101100_00000002,Provides pianos and organs for sale and may offer tuning or repair services.
+Retail,"Piece Goods, Sewing & Needlework Stores",No,No,Yes,Yes,45113000_11101100_00000002,"Offers fabric, patterns, yarn, sewing supplies, and needlework accessories for crafting and sewing projects."
+Retail,Popcorn Shops,No,No,Yes,Yes,72251500_11101100_09000000,"Sells popcorn, often made and flavored in-store, as a snack or gift item."
+Retail,Pretzel shop,No,No,Yes,Yes,72251500_11101100_10000000,"Specializes in pretzels, preparing and selling them fresh to customers."
+Retail,"Record, CD, Music & Tape Stores",No,No,No,Yes,44314200_11101100_00000006,"Offers music on vinyl records, tapes, and CDs"
+Retail,School Supplies Stores,No,No,Yes,Yes,45321000_11101100_00000002,"Sells school supplies, including backpacks, notebooks, and writing instruments."
+Retail,Scrapbooking Stores,No,No,Yes,Yes,45321000_11101100_00000003,Provides scrapbooking supplies for creative memory-keeping and crafting.
+Retail,Sewing Machine Stores,No,No,No,Yes,44311100_11101100_00000000,"Sells sewing machines and may also offer fabric, patterns, and sewing accessories."
+Retail,Shoe Stores,No,No,Yes,Yes,44821000_11101100_00000000,Offers shoes and related accessories for various occasions and needs.
+Retail,Specialty Food Stores,No,No,No,Yes,45111000_11101100_00000000,"Sells specialty foods, including unique or gourmet items not widely available elsewhere."
+Retail,Spice Shops,No,No,No,Yes,44529900_11101100_00000007,"Provides spices for cooking and baking, catering to culinary enthusiasts."
+Retail,Sports Apparel & Accessories Stores,No,No,Yes,Yes,44819000_11101100_00000005,Sells sports apparel and accessories for athletes and fans.
+Retail,Stores NOC Food / Drink - High Hazard,No,No,No,No,45231900_11101100_00000002,"Offers food and beverages not otherwise classified, considered high hazard."
+Retail,Stores NOC Food / Drink - Low Hazard,No,No,No,No,45231900_11101100_00000003,"Sells food and beverages not otherwise classified, considered low hazard."
+Retail,Stores NOC Food / Drink - Medium Hazard,No,No,No,No,45231900_11101100_00000004,"Provides food and beverages not otherwise classified, considered medium hazard."
+Retail,Stores NOC Other Than Food or Drink - High Hazard,No,No,No,No,45231900_11101100_00000005,"Retail stores not otherwise classified that sell goods other than food or beverages, and are considered high hazard due to the nature of their inventory, operations, or environment."
+Retail,Stores NOC Other Than Food or Drink - Low Hazard,No,No,No,No,45231900_11101100_00000006,"Retail stores not otherwise classified that sell goods other than food or beverages, and are considered low hazard due to minimal risk associated with their inventory, operations, or environment."
+Retail,Stores NOC Other Than Food or Drink - Medium Hazard,No,No,No,No,45231900_11101100_00000007,"Retail stores not otherwise classified that sell goods other than food or beverages, and are considered medium hazard based on inventory, operations, or environment."
+Retail,Sunglass Stores,No,No,Yes,Yes,44613000_11101100_00000000,Sells sunglasses and accessories for eye protection and fashion.
+Retail,Tie Shops,No,No,Yes,Yes,44815000_11101100_00000003,Offers ties and related accessories for formal or business attire.
+Retail,Trophy Stores,No,No,Yes,Yes,45399800_11101100_00000008,"Sells trophies, plaques, awards, and medals for recognition and achievement."
+Retail,T-Shirt Stores,No,No,Yes,Yes,44814000_11101100_00000003,"Specializes in t-shirts, including customizable options for personal or promotional use."
+Retail,Uniform Stores,No,No,Yes,Yes,44819000_11101100_00000006,"Offers uniforms for various professions, schools, or organizations."
+Retail,Used Merchandise Stores,No,No,No,Yes,45331000_11101100_00000000,"Sells previously owned goods such as clothing, furniture, electronics, and household items, often including thrift shops, and resale outlets."
+Retail,Vacuum Cleaner Sales & Service,No,No,No,Yes,44314100_11101100_00000003,Provides vacuum cleaner sales and repair services for home or business cleaning needs.
+Retail,Video Tapes & Disc Rental,No,No,Yes,Yes,53228200_11101100_00000000,Rents video tapes and discs for home entertainment.
+Retail,Watch Stores,No,No,Yes,Yes,44831000_11101100_00000003,Sells and may service watches for timekeeping and fashion.
+Retail,Wigs & Toupees Stores,No,No,Yes,Yes,44815000_11101100_00000004,"Offers wigs and toupees for style, medical needs, or costume purposes."
+Retail,Window Treatment Stores,No,No,Yes,Yes,44229100_11101100_00000002,"Sells and services window treatments, including blinds, shades, and curtains."
+Retail,Women's Clothing Stores,No,No,Yes,Yes,44812000_11101100_00000002,Provides women’s clothing and accessories for various styles and occasions.
+Retail,Yarn Stores,No,No,Yes,Yes,45113000_11101100_00000003,Offers yarn and knitting supplies for crafting and textile projects.
+Small Contractors,Air conditioning systems installation and repair,Yes,Yes,No,Yes,23822000_49902100_01000000,"Installs and repairs air conditioning systems and equipment, ensuring proper climate control in residential or commercial settings."
+Small Contractors,Appliance and accessories installation and repair,Yes,Yes,No,Yes,81141200_49909900_00000000,"Handles installation and repair of appliances and accessories, providing essential support for household and business operations."
+Small Contractors,Arborist,No,Yes,No,No,56173000_37301100_03000000,"Provides professional tree care services, including pruning, removal, planting, and health assessments, often performed by certified specialists."
+Small Contractors,At-risk construction management,No,No,No,No,23622000_15420000_02000000,"Oversees and manages construction projects where the manager assumes contractual risk for project delivery, often guaranteeing completion within a set budget and timeline."
+Small Contractors,Audio/video installation,No,Yes,No,No,23821000_49209700_01000000,"Provides installation and setup of audio and video equipment, including home theaters, sound systems, projectors, and related technology for residential or commercial clients."
+Small Contractors,Bricklaying & tuckpointing,No,Yes,No,No,23814000_47202100_01000000,"Provides bricklaying and tuckpointing services, enhancing the durability and appearance of structures."
+Small Contractors,Cabling installation,Yes,Yes,No,Yes,23821000_49905200_01000000,"Installs and repairs telecommunications cables, including phone lines, internet cables, or cable television, supporting modern communication needs."
+Small Contractors,Carpentry (exterior only),No,Yes,No,No,23835000_47203100_01000200,"Performs exterior carpentry work, focusing on the construction and maintenance of outdoor structures."
+Small Contractors,Carpentry (interior & exterior),No,Yes,No,No,23835000_47203100_01000300,"Handles both interior and exterior carpentry projects, offering comprehensive woodwork solutions."
+Small Contractors,Carpentry (interior only),Yes,Yes,No,Yes,23835000_47203100_01000100,"Specializes in interior carpentry, crafting and maintaining indoor wood features."
+Small Contractors,Carpet laying & removal,No,Yes,No,No,23833000_47204100_00000000,"Lays and removes carpet, ensuring comfortable and attractive flooring in homes and businesses."
+Small Contractors,"Carpet, rug, furniture, or upholstery cleaning (customer’s premises only)",Yes,No,No,Yes,56174000_51601100_00010000,"Cleans rugs, carpets, furniture, or upholstery at the customer's premises, maintaining hygiene and appearance."
+Small Contractors,Chimney construction & maintenance,No,No,No,No,23814000_47202100_02000000,"Constructs and maintains chimneys, contributing to safe and efficient heating systems."
+Small Contractors,Clock making and repair,Yes,No,No,Yes,81149000_49906400_00000000,"Makes or repairs clocks and watches, providing timekeeping solutions and restoration services."
+Small Contractors,Communication equipment installation (cable/satellite),Yes,Yes,No,Yes,23821000_49905200_02000000,"Installs communication equipment such as cable or satellite, enabling access to television and internet services."
+Small Contractors,Concrete contractor,No,No,No,No,23839000_47205100_00000000,"Pours, finishes, protects, and repairs concrete, supporting construction and infrastructure projects."
+Small Contractors,Counter top installation,No,Yes,No,No,23835000_47204400_00000000,"Installs countertops made of granite, marble, wood, or other materials, enhancing kitchens and workspaces."
+Small Contractors,Demolition and excavation,No,Yes,No,No,23891000_17940000_01000000,"Performs the tearing down of structures and the removal of debris, as well as earthmoving and site preparation activities such as digging, grading, and trenching."
+Small Contractors,Design-build firms,No,No,No,No,23622000_15420000_03000000,"Offers integrated design and construction services under a single contract, managing both the architectural design and the building process for construction projects."
+Small Contractors,Dirt developers,No,No,No,No,23891000_17940000_02000000,"Prepares undeveloped land for construction by grading, leveling, and performing initial site work, often including clearing, excavation, and basic infrastructure installation."
+Small Contractors,Door or window installation and repair,Yes,Yes,No,Yes,23835000_47203100_02000300,"Installs, replaces, or repairs windows and doors, improving security and energy efficiency."
+Small Contractors,Driveway or sidewalk paving/repaving,Yes,Yes,No,Yes,23899000_47409100_00000000,"Paves or repaves sidewalks and driveways, ensuring safe and accessible outdoor surfaces."
+Small Contractors,Drywall or wallboard installation and repair (including framing),No,Yes,No,Yes,23813000_17510000_01000000,"Installs, repairs, and finishes drywall or wallboard, including the construction of framing to support walls and ceilings in residential or commercial buildings."
+Small Contractors,Drywall/wallboard installation & repair (no framing/EIFS/external insulation/structural work),Yes,Yes,No,Yes,23831000_47208100_01000000,"Installs and repairs drywall or wallboard, creating smooth and durable interior walls."
+Small Contractors,Electric vehicle charging station installation,No,Yes,No,No,23821000_47211100_01000400,"Installs and maintains electric vehicle (EV) charging stations and related infrastructure for homes, businesses, or public spaces."
+Small Contractors,Electrical work (exterior only),No,Yes,No,No,23821000_47211100_01000200,"Performs exterior electrical work, ensuring safe and reliable power for outdoor spaces."
+Small Contractors,Electrical work (interior & exterior),No,Yes,No,No,23821000_47211100_01000300,"Handles both interior and exterior electrical projects, providing comprehensive electrical solutions."
+Small Contractors,Electrical work (interior only),Yes,Yes,No,Yes,23821000_47211100_01000100,"Specializes in interior electrical work, wiring and maintaining indoor electrical systems."
+Small Contractors,Electronics (consumer) install & repair,No,Yes,No,Yes,81121100_49909900_00010000,"Installs and repairs consumer electronics, supporting entertainment and productivity."
+Small Contractors,Exterior finishing & siding (EIFS),No,Yes,No,No,23839000_49909900_03000000,"Applies exterior insulation and finish systems (EIFS) and other siding materials to building exteriors, providing insulation, weatherproofing, and decorative finishes."
+Small Contractors,Fence installation and repair,Yes,Yes,No,Yes,23899000_47403100_00000000,"Installs and repairs fences, enhancing property boundaries and security."
+Small Contractors,Fire system installation & sprinkler services,No,Yes,No,No,23822000_47215200_00030000,"Designs, installs, and maintains fire protection systems, including fire sprinklers, alarms, and suppression equipment for residential, commercial, or industrial properties."
+Small Contractors,Floor covering installation (including ceramic tile/stone),No,Yes,No,No,23833000_17520000_00000000,"Installs a variety of floor coverings, including carpet, vinyl, hardwood, laminate, ceramic tile, and stone, for residential or commercial spaces."
+Small Contractors,Floor covering installation (no ceramic tile/stone),Yes,Yes,No,Yes,23833000_47204200_01000000,"Installs floor coverings such as vinyl or wood (excluding ceramic, tile, or stone), improving flooring aesthetics and function."
+Small Contractors,Footwear & leather goods repair,No,No,No,Yes,81143000_51604100_00000000,"Repairs, restores, and maintains shoes, boots, handbags, belts, and other leather goods, often including stitching, resoling, and cleaning."
+Small Contractors,Framing contractor,No,Yes,No,No,23813000_17510000_02000000,"Constructs the structural framework of buildings, including walls, floors, and roofs, using wood, steel, or engineered materials."
+Small Contractors,Furniture and fixture installation,No,Yes,No,No,23839000_49909900_01000000,"Delivers and installs furniture, fixtures, and related equipment in homes, offices, or commercial spaces, ensuring proper assembly and placement."
+Small Contractors,General Contractor - Construction and installation only,No,Yes,No,No,23622000_15420000_01000000,"Manages and oversees construction projects, coordinating labor and materials for building or renovating structures, but does not provide design services."
+Small Contractors,Glass & glazing contractor/window contractor/glazier,No,Yes,No,No,23815000_47212100_02000000,"Installs, repairs, and replaces glass in windows, doors, storefronts, and other architectural features, including glazing and sealing."
+Small Contractors,Glass installation and repair (no auto work),Yes,Yes,No,Yes,23815000_47212100_01000000,"Installs and repairs glass (excluding auto glass), improving visibility and safety in buildings."
+Small Contractors,Gutter & downspout work,No,Yes,No,No,23817000_47221100_00000000,"Installs and repairs gutters and downspouts, protecting buildings from water damage."
+Small Contractors,Handyperson (no roof work),Yes,No,No,Yes,23839000_49907100_01000000,"Performs a wide range of repairs and home improvement projects, excluding roof work, as a handyperson."
+Small Contractors,Heating and air conditioning installation and repair (no liquefied petroleum gas (LPG)),Yes,Yes,No,Yes,23822000_49902100_02000000,"Installs and repairs heating and air conditioning systems and equipment (excluding liquefied petroleum gas), ensuring comfort and efficiency."
+Small Contractors,Home appliance installation,No,Yes,No,Yes,81121100_49903100_00000000,"Installs home appliances, supporting daily living and convenience."
+Small Contractors,Home builders,No,No,No,No,23611700_15310000_00000000,"Constructs new residential homes, including single-family houses, townhomes, and subdivisions, managing all phases from site preparation to final inspection."
+Small Contractors,Home theater installation,Yes,Yes,No,Yes,81121100_49209700_00000000,"Installs home theater equipment, enhancing entertainment experiences."
+Small Contractors,House furnishings installation,No,Yes,No,No,23839000_49909900_02000000,"Installs house furnishings, helping create comfortable and stylish interiors."
+Small Contractors,HVAC contractor,No,Yes,No,No,23822000_49902100_03000000,"Installs, maintains, and repairs heating, ventilation, and air conditioning (HVAC) systems for residential, commercial, or industrial buildings."
+Small Contractors,Insulation installation,No,Yes,No,No,23817000_17610000_00000000,"Applies thermal, acoustic, or fire-resistant insulation materials to walls, ceilings, attics, and other building areas to improve energy efficiency and comfort."
+Small Contractors,Interior finishing work,Yes,Yes,No,Yes,23835000_47203100_03000100,"Performs interior finishing work, adding the final touches to construction or renovation projects."
+Small Contractors,Irrigation or drainage systems,No,Yes,No,No,22131000_37301100_00000000,"Installs and repairs irrigation and drainage systems for residential lawns and gardens, supporting healthy landscapes."
+Small Contractors,Key cutting services,No,No,No,Yes,81149000_49909400_00000000,"Cuts key copies, providing security and convenience for homes and businesses."
+Small Contractors,Land grading services,No,Yes,No,No,23891000_37301900_00000000,"Sculpts or levels land to prepare for construction, gardening, or landscaping projects."
+Small Contractors,Lighting installation,No,Yes,No,No,23821000_47211100_02000300,"Installs lighting equipment and fixtures, improving visibility and ambiance."
+Small Contractors,Locksmiths,Yes,No,No,Yes,56162200_49909400_00000000,"Installs and repairs locks, and opens locks without keys, enhancing security"
+Small Contractors,Mantel work,No,Yes,No,No,23834000_47203100_00000000,"Installs and repairs mantels, adding decorative and functional features to fireplaces."
+Small Contractors,Manufacturer,No,No,No,No,31000000_39990000_00000000,"Produces goods or products by transforming raw materials or components into finished items through industrial processes, often for wholesale or retail distribution."
+Small Contractors,Masonry work,Yes,Yes,No,Yes,23814000_47205100_00000000,"Performs masonry work, including brick and stone projects, contributing to durable and attractive structures."
+Small Contractors,Metal fabrication,No,Yes,No,No,33299900_34990000_01000000,"Cuts, shapes, and assembles metal components to create structures, machinery, or products, using processes such as welding, machining, and forming."
+Small Contractors,"Millwrights, plant & machinery installation",No,Yes,No,No,23829000_17960000_00000000,"Installs, maintains, and moves heavy industrial machinery and equipment within plants or factories, ensuring precise alignment and operational readiness."
+Small Contractors,Mining contractor,No,No,No,No,21311500_14810000_00000000,"Performs contract-based mining operations, including extraction, site preparation, drilling, blasting, and hauling of minerals or ores for mining companies."
+Small Contractors,Musical instrument tuning & repair - no antiques,No,No,No,Yes,81149000_49906300_01000000,"Tunes and repairs musical instruments (excluding antiques), supporting musicians and music education."
+Small Contractors,Oil & gas subcontractor,No,No,No,No,21311200_13890000_01000000,"Provides specialized services or labor for oil and gas exploration, drilling, production, or maintenance, typically under contract to primary operators."
+Small Contractors,Painting (exterior) less than 3 stories,No,Yes,No,Yes,23832000_47214100_00000200,"Paints building exteriors of fewer than three stories, maintaining and beautifying properties."
+Small Contractors,Painting (interior & exterior) less than 3 stories,No,Yes,No,Yes,23832000_47214100_00000300,"Paints interiors and exteriors of buildings of fewer than three stories, offering comprehensive painting services."
+Small Contractors,Painting (interior only),Yes,Yes,No,Yes,23832000_47214100_00000100,"Specializes in interior painting for buildings, enhancing aesthetics and protection."
+Small Contractors,Paving contractor,No,Yes,No,No,23899000_47409100_01000000,"Constructs, repairs, and maintains paved surfaces such as roads, driveways, parking lots, and walkways using materials like asphalt, concrete, or stone."
+Small Contractors,Petroleum contractor,No,No,No,No,21311200_13890000_02000000,"Offers construction, installation, or maintenance services for petroleum facilities, including pipelines, storage tanks, refineries, and related infrastructure."
+Small Contractors,Piano tuning,No,No,No,Yes,81149000_49906300_02000000,Tunes and may repair pianos
+Small Contractors,Plastering or stucco work,Yes,Yes,No,Yes,23831000_47208100_02000000,"Performs plastering and stucco work, creating smooth and durable wall finishes."
+Small Contractors,Plumbing (commercial or industrial),Yes,Yes,No,Yes,23822000_47215200_00020000,"Provides commercial or industrial plumbing services, ensuring safe and efficient water systems."
+Small Contractors,Plumbing (residential or domestic),Yes,Yes,No,Yes,23822000_47215200_00010000,"Handles residential plumbing projects, supporting home water supply and drainage."
+Small Contractors,Poured concrete foundation & structure contractor,No,No,No,No,23811000_17710000_00000000,"Specializes in pouring and finishing concrete for building foundations, walls, slabs, and structural elements in residential, commercial, or industrial projects."
+Small Contractors,Real estate developers,No,No,No,No,53139000_65310200_00000000,"Acquires land, plans, finances, and oversees the development of residential, commercial, or industrial properties, managing projects from concept to completion."
+Small Contractors,Refrigeration system install & repair,No,Yes,No,Yes,81141200_49902100_00000000,"Installs or repairs refrigeration systems, maintaining proper temperature for food and other goods."
+Small Contractors,Remediation contractor,No,No,No,No,56291000_17990000_00000000,"Performs environmental cleanup and restoration, including removal of hazardous materials, soil remediation, and site decontamination to meet regulatory standards."
+Small Contractors,Renovation contractor,No,Yes,No,No,23611800_15310000_00000000,"Manages and executes renovation, remodeling, or restoration projects for existing buildings, including structural, interior, and exterior improvements."
+Small Contractors,Roofing contractor,No,Yes,No,No,23816000_17610000_00000000,"Installs, repairs, and maintains roofing systems using materials such as shingles, metal, tile, or membrane for residential, commercial, or industrial buildings."
+Small Contractors,Sculptor,No,Yes,No,No,71151000_89990100_00000000,"Creates original three-dimensional artworks by carving, modeling, or assembling materials such as stone, metal, wood, or clay for decorative or artistic purposes."
+Small Contractors,Security system installation,Yes,Yes,No,Yes,56162100_49209800_00000000,"Installs electronic security systems, such as alarms, surveillance cameras, and access control devices, for residential, commercial, or industrial properties. Does not provide monitoring services."
+Small Contractors,Sheet metal fabrication,No,Yes,No,No,33299900_34990000_02000000,"Cuts, shapes, and assembles sheet metal into products or components for construction, HVAC, or manufacturing, using processes like welding, bending, and forming."
+Small Contractors,Sheet metal work (exterior),No,Yes,No,No,23816000_47221100_00000200,"Installs and repairs exterior sheet metal elements such as siding, flashing, gutters, downspouts, and decorative architectural features on buildings."
+Small Contractors,Siding installation (< 3 stories),No,Yes,No,No,23817000_47203100_01000000,"Installs siding on buildings with fewer than three stories, improving appearance and protection."
+Small Contractors,Sign painting and lettering (exterior only),Yes,Yes,No,Yes,54189000_51912300_00000200,"Provides exterior sign painting and lettering services, enhancing business visibility."
+Small Contractors,Sign painting and lettering (interior only),Yes,Yes,No,Yes,54189000_51912300_00000100,"Offers interior sign painting and lettering services, supporting branding and communication."
+Small Contractors,Solar energy installation & repair,No,Yes,No,No,23821000_47223100_00000000,Installs and repairs solar energy systems for homes and other small projects.
+Small Contractors,Solar panel & solar wall installation,No,Yes,No,No,23821000_47223100_01000000,Installs small-scale photovoltaic solar panels and solar wall systems for residential or light commercial properties. Does not provide system design or large project installations.
+Small Contractors,Sound equipment installation,Yes,Yes,No,Yes,23821000_49209700_00000000,"Sets up, installs, and repairs audio systems for events, ensuring quality sound experiences."
+Small Contractors,Structural steel & precast concrete contractor,No,No,No,No,23812000_17910000_00000000,"Erects and installs structural steel frameworks and precast concrete components for buildings, bridges, and other large structures."
+Small Contractors,Swimming pool contractor,No,Yes,No,No,23899000_17990100_00000000,"Constructs, installs, maintains, and renovates swimming pools and related features, including in-ground and above-ground pools."
+Small Contractors,Tailors & seamstress,No,No,No,Yes,81149000_51605200_00000000,"Sews, alters, and repairs clothing, supporting fashion and functionality as a tailor or seamstress."
+Small Contractors,Telecom installation,No,Yes,No,No,23821000_49905200_03000000,"Installs, configures, and maintains telecommunications equipment and infrastructure, including cabling, network hardware, and communication systems."
+Small Contractors,"Tile, stone, marble, mosaic, or terrazzo work (including exterior work)",No,Yes,No,No,23834000_47204400_00000200,"Installs and repairs tile, stone, marble, mosaic, or terrazzo surfaces for floors, walls, and exteriors, providing decorative and durable finishes."
+Small Contractors,"Tile, stone, marble, mosaic, or terrazzo work (interior only)",Yes,Yes,No,Yes,23834000_47204400_00000100,"Installs and repairs interior tile, stone, marble, mosaic, or terrazzo, creating attractive and durable surfaces."
+Small Contractors,Trade show booth & display installation,No,Yes,No,No,23839000_49909900_04000000,"Assembles, installs, and dismantles trade show booths, exhibits, and displays for conventions, expos, and promotional events."
+Small Contractors,Tree removal,No,No,No,No,56173000_37301100_04000000,"Removes trees, stumps, and large branches from properties for safety, construction, or landscaping purposes, often including site cleanup and disposal."
+Small Contractors,Underground utility locating services,No,No,No,No,56199000_73899900_00000000,"Detects and marks the location of underground utilities such as water, gas, electric, and telecommunications lines to prevent damage during excavation."
+Small Contractors,Upholstery work,Yes,No,No,Yes,81142000_51609300_00000000,"Provides upholstery services, restoring and enhancing furniture comfort and appearance."
+Small Contractors,Utility/telecom cable installation,No,Yes,No,No,23821000_49905200_04000000,"Installs, repairs, and maintains utility and telecommunications cables, including fiber optic, coaxial, and electrical lines, for residential, commercial, or municipal projects."
+Small Contractors,Welder,No,Yes,No,No,81131000_76920000_00000000,"Joins, repairs, or fabricates metal parts and structures using welding techniques such as arc, MIG, TIG, or gas welding for construction, manufacturing, or repair."
+Small Contractors,Window cleaning (nothing above 15 feet),Yes,No,No,Yes,56172000_37201100_02000000,"Cleans windows up to 15 feet high, maintaining clear views and building aesthetics."
+Small Contractors,Window treatment installation,No,Yes,No,Yes,81149000_49909900_00000000,"Installs and maintains window treatments, including blinds, shades, and curtains."
+Technology,Application development,Yes,Yes,Yes,Yes,54151900_15125100_00000000,"Develops software applications for mobile devices, creating tools and solutions for smartphones and tablets."
+Technology,Application service provider,Yes,Yes,Yes,No,51821000_13119900_01000000,Provides software tools for remote access over the internet as an application service provider.
+Technology,Communication Equip Repair & Maintenance,No,No,Yes,Yes,81121300_49202200_00000000,"Installs and repairs telecommunications equipment, excluding line installation, to ensure reliable communication systems."
+Technology,Computer & Office Equip Repair & Maintenance,No,No,Yes,Yes,81121200_49201100_01000000,Repairs and maintains computers and office equipment for businesses and individuals.
+Technology,Computer consulting,Yes,Yes,Yes,Yes,54169000_15122100_00000000,"Offers computer system consulting services, advising organizations on technology strategies and solutions."
+Technology,Computer Facilities Management,No,No,Yes,Yes,54151300_11302100_00000000,"Manages and operates clients’ computer systems or data processing facilities, providing services such as system monitoring, maintenance, and support."
+Technology,Computer programming services,Yes,Yes,Yes,Yes,54151100_15125100_01000000,"Programs computer software for specific organizations or functions, tailoring solutions to unique business needs."
+Technology,Computer Related Services – High Hazard,No,No,No,No,54151900_15129900_03000000,"Provides computer-related services not otherwise classified, focusing on high-hazard environments."
+Technology,Computer Related Services – Low Hazard,No,No,No,No,54151900_15129900_04000000,"Delivers computer-related services not otherwise classified, focusing on low-hazard environments."
+Technology,Computer Related Services – Medium Hazard,No,No,No,No,54151900_15129900_05000000,"Provides computer-related services not otherwise classified, with a medium level of operational or technical risk, such as system support, troubleshooting, or basic IT consulting."
+Technology,Computer system/network developer,Yes,Yes,Yes,Yes,54151200_15124100_00000000,"Designs, develops, and may install computer networks, ensuring seamless connectivity and communication."
+Technology,Computer Systems Integrators,No,No,Yes,Yes,54151200_11302100_03000000,Integrates computer systems to create efficient networks for organizations.
+Technology,Computer Training,No,No,Yes,Yes,61142000_11313100_00000000,"Provides training on computer systems, hardware, and software to enhance user skills and productivity."
+Technology,Consultants - Computer Hardware,No,No,Yes,Yes,54151200_17206100_00000000,"Consults on computer hardware, offering expertise in selection, deployment, and maintenance."
+Technology,Consultants - Computer Software,No,No,Yes,Yes,54151200_15122100_00000000,"Advises on computer software, helping organizations choose and implement the right applications."
+Technology,Consultants - Information Technology,No,No,Yes,Yes,54151200_11302100_04000000,"Consults on information technology systems, guiding businesses through technology adoption and optimization."
+Technology,Custom Computer Programming,No,No,Yes,Yes,54151100_15125100_02000000,"Creates custom software for specific organizations or functions, addressing unique operational requirements."
+Technology,Data processing,Yes,Yes,Yes,Yes,51821000_13119900_02000000,"Offers services to collect, process, analyze, and manage data for clients, including data entry, conversion, reporting, and related support functions."
+Technology,"Data Processing Services, Hosting and Related Services",No,No,No,Yes,51821000_15121100_00000000,"Offers data processing, hosting, and related services, managing and analyzing large volumes of information."
+Technology,Database designer,Yes,Yes,Yes,Yes,54151200_15124300_00000000,"Designs databases for specific applications, ensuring efficient data storage and retrieval."
+Technology,Information Technology Staffing,No,No,Yes,Yes,56132000_15129900_00000000,"Supplies temporary or contract staff for information technology positions, supporting project and operational needs."
+Technology,Ink Cartridge Refill,No,No,Yes,Yes,81121200_49201100_02000000,"Refills ink cartridges for office equipment, promoting sustainability and cost savings."
+Technology,Internet Services Providers,No,No,No,Yes,51731200_15124100_00000000,"Provides internet connectivity for web browsing, email, and other services as an internet service provider."
+Technology,IT consulting,Yes,Yes,Yes,Yes,54169000_15129900_00000000,"Offers advice on system integration, technology strategy, and project management as an IT consultant."
+Technology,IT project management,Yes,Yes,Yes,Yes,54169000_15119900_00000000,"Manages IT project management, overseeing technology initiatives from planning to execution."
+Technology,IT software/hardware training services,Yes,Yes,Yes,Yes,61142000_13115100_00000000,"Provides training on computer hardware and software, enhancing technical proficiency."
+Technology,Office Equipment Repair and Maintenance,No,No,Yes,Yes,81121200_49201100_03000000,"Repairs and maintains office equipment, ensuring smooth business operations."
+Technology,Other Communication Services,No,No,Yes,Yes,51791900_15123100_00000000,"Delivers communication services not otherwise classified, supporting diverse business needs."
+Technology,Other technology services,No,No,No,No,54151900_15129900_06000000,Offers technology services not otherwise classified.
+Technology,Packaged Software Development,No,No,Yes,Yes,51121000_15125200_01000000,"Develops software applications for retail sale, creating packaged solutions for consumers and businesses."
+Technology,Personal Computer Repair and Maintenance,No,No,Yes,Yes,81121200_49201100_04000000,"Repairs and maintains personal computers, supporting individual users and small businesses."
+Technology,Publishers - Software,No,No,Yes,Yes,51121000_15125200_02000000,"Publishes computer software programs, distributing digital tools and applications."
+Technology,Semiconductor Design - No Manufacturing,No,No,Yes,Yes,33441300_17206100_00000000,"Designs semiconductors without manufacturing, contributing to the development of electronic devices."
+Technology,Software development,Yes,Yes,Yes,Yes,54151900_15125200_01000000,Conducts research and development for computer software without producing commercial products.
+Technology,Software Research and Development - No Products,No,No,Yes,Yes,54151900_15125200_02000000,"Manages technology services companies at the executive level, overseeing strategic direction and operations."
+Technology,Technology services,No,No,No,No,54151900_11101100_00000000,Offers technology services not otherwise classified.
+Technology,Telecommunication and internet services,No,No,No,Yes,51791900_49202200_00000000,"Provides telecommunications and internet services not otherwise classified, enabling connectivity and communication."
+Technology,Telecommunication Service Provider – Wired,No,No,No,Yes,51731100_49202200_00000000,"Supplies wired telecommunication services, supporting reliable voice and data transmission."
+Technology,Telecommunication Service Provider – Rebillers & Resellers Only,No,No,No,Yes,51791100_11101100_00000000,"Rebills or resells telecommunications services, acting as intermediaries between providers and customers."
+Technology,Value added reseller of computer hardware,Yes,Yes,Yes,Yes,45399800_17206100_00000000,"Resells computer hardware with added software or accessories, offering value-added solutions."
+Technology,Web Search Portals,No,No,No,Yes,51913000_15125500_00000000,"Designs digital interfaces for web search portals, enhancing user experience and accessibility."
+Technology,Website design,Yes,Yes,Yes,Yes,54151200_15125400_00000000,"Designs and deploys websites, creating an online presence for businesses and individuals."

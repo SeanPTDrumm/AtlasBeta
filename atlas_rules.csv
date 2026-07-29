@@ -1,0 +1,26 @@
+Rule_Type,NAICS_Sector_Code,Sector_Name,Pattern_or_Phrase,Direction,Match_Count,Total_Count,Notes
+sector_base,11,Agriculture,,OOA,632,632,"Entire sector excluded, no known carve-in exceptions"
+sector_base,21,Mining,,OOA,640,640,"Entire sector excluded, no known carve-in exceptions"
+sector_base,22,Utilities,,OOA,68,68,"Entire sector excluded, no known carve-in exceptions"
+sector_base,55,Mgmt of Companies,,OOA,20,20,"Entire sector excluded, no known carve-in exceptions"
+sector_base,92,Public Admin,,OOA,290,290,"Entire sector excluded, no known carve-in exceptions"
+sector_carve_in,42,Wholesale Trade,manufacturer sales representative,In-Appetite,,,Wholesale sector is OOA except this specific role
+sector_carve_in,"48,49",Transportation,delivery service providers,In-Appetite,11,437,Transportation sector is OOA except delivery services
+sector_carve_in,"31,32,33",Manufacturing,printing / prepress / bookbinding / screen printing,In-Appetite,~215,10164,Printing activities coded as manufacturing but treated as services
+sector_carve_in,"31,32,33",Manufacturing,"small craft/service makers (tailors, dental labs, confectionery, clock repair)",In-Appetite,~22,10164,"Small-scale craft/service activity, low hazard"
+phrase_exclusion,23,Construction,for-sale builders,OOA,45,45,Phrase-level exclusion cutting across NAICS codes within Construction
+phrase_exclusion,23,Construction,plant construction,OOA,25,25,Phrase-level exclusion cutting across NAICS codes within Construction
+phrase_exclusion,23,Construction,construction management,OOA,16,16,Phrase-level exclusion cutting across NAICS codes within Construction
+phrase_exclusion,23,Construction,assembled on site,OOA,,,Phrase-level exclusion cutting across NAICS codes within Construction
+phrase_exclusion,23,Construction,own land,OOA,,,Phrase-level exclusion cutting across NAICS codes within Construction
+phrase_exclusion,23,Construction,highway,OOA,16,16,Phrase-level exclusion cutting across NAICS codes within Construction
+phrase_exclusion,54,Professional/Scientific/Technical Services,biotechnology / nanobiotechnology research,OOA,30,30,High-hazard novel R&D activity excluded from otherwise mixed sector
+phrase_exclusion,62,Health Care and Social Assistance,nursing care,OOA,14,14,Custodial/high-acuity care excluded from otherwise mixed sector
+phrase_exclusion,62,Health Care and Social Assistance,drug addiction,OOA,,,Custodial/high-acuity care excluded from otherwise mixed sector
+phrase_exclusion,62,Health Care and Social Assistance,substance abuse,OOA,,,Custodial/high-acuity care excluded from otherwise mixed sector
+phrase_exclusion,62,Health Care and Social Assistance,developmental disability,OOA,,,Custodial/high-acuity care excluded from otherwise mixed sector
+phrase_exclusion,51,Information,motion picture / video production,OOA,45,45,"Film/video production excluded from otherwise mixed sector. Note: 2 rows mention ""motion picture"" but describe libraries/archives, not production - correctly mapped to Library COB, not true exceptions to this rule."
+phrase_exclusion,42,Wholesale Trade,wholesaler,OOA,2041,2042,Wholesaler businesses are almost universally OOA. Exception: wholesalers trade associations - see carve-in rule below.
+sector_carve_in,42,Wholesale Trade,wholesalers association,In-Appetite,1,1,A trade association FOR wholesalers is not itself a wholesale operation - maps to Trade Association non profit.
+phrase_exclusion,42,Wholesale Trade,distributor,OOA,5,6,"Distributors are almost universally OOA, similar pattern to wholesalers."
+review_flag_vague_input,,,starts with Other/Miscellaneous/NOC,Flag for review,19,20,"If partner-supplied name itself starts with a generic catch-all term (Other, Miscellaneous, NOC), flag for human review UNLESS it has a near-exact (>=0.90 string similarity) match to one of the 12 official Other- COBs, in which case treat as a legitimate match. Tested on 20 real partner names: only 1 (Other Clothing Store/Stores) cleared the threshold."
