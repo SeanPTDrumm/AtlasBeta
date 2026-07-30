@@ -7,6 +7,7 @@ from sklearn.linear_model import LogisticRegression
 
 st.set_page_config(page_title="Atlas", layout="wide")
 st.title("Atlas — Class of Business Matcher")
+st.caption("🔖 VERSION CHECK: v33-rules-2026-07-30 — if you don't see this exact tag, the app is NOT running the latest code.")
 
 @st.cache_resource
 def load_data():
