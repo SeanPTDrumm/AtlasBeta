@@ -37,12 +37,20 @@ def encode_cobs(_model, _cobs):
     embeddings = _model.encode(texts, normalize_embeddings=True)
     return texts, embeddings
 
+@st.cache_resource
+def encode_naics(_model, _naics):
+    df = _naics.dropna(subset=["NAICS_Description"]).reset_index(drop=True)
+    texts = df["NAICS_Description"].tolist()
+    embeddings = _model.encode(texts, normalize_embeddings=True, batch_size=64, show_progress_bar=False)
+    return df, embeddings
+
 cobs, naics, rules = load_data()
 vec, appetite_clf = train_appetite_classifier(naics)
 
 with st.spinner("Loading semantic matching model (first run only, may take a minute)..."):
     model = load_semantic_model()
     cob_texts, cob_embeddings = encode_cobs(model, cobs)
+    naics_df, naics_embeddings = encode_naics(model, naics)
 
 cob_names = cobs["Hiscox_COB"].tolist()
 
@@ -114,5 +122,26 @@ if query:
             for rank, idx in enumerate(top3_idx, start=1):
                 st.write(f"**#{rank}: {cob_names[idx]}**  (similarity: {sims[0][idx]:.3f})")
 
-            if sims[0][top3_idx[0]] < 0.45:
+            top_cob = cob_names[top3_idx[0]]
+            top_cob_score = sims[0][top3_idx[0]]
+
+            if top_cob_score < 0.45:
                 st.warning("Top match confidence is low — this case likely needs human review rather than auto-accept.")
+
+            st.subheader("Step 4 — NAICS Secondary Check (informational, does not override)")
+            naics_sims = q_emb @ naics_embeddings.T
+            best_naics_idx = int(np.argmax(naics_sims[0]))
+            best_naics_score = naics_sims[0][best_naics_idx]
+            naics_row = naics_df.iloc[best_naics_idx]
+            naics_cob = naics_row["Hiscox_COB"]
+            naics_desc = naics_row["NAICS_Description"]
+
+            st.write(f"Closest NAICS description found: *\"{naics_desc}\"* (similarity: {best_naics_score:.3f})")
+            st.write(f"That NAICS row's known outcome: **{naics_cob}**")
+
+            if naics_cob == top_cob:
+                st.success("Agreement: NAICS check confirms the same COB as semantic matching. Confidence boost — this strengthens the case for auto-accept.")
+            elif naics_cob == "OOA" and top_cob != "OOA":
+                st.warning("Disagreement: semantic matching found an in-appetite COB, but the closest NAICS description is OOA. Worth flagging for review.")
+            else:
+                st.warning(f"Disagreement: semantic matching says \"{top_cob}\", but the NAICS check points to \"{naics_cob}\". Flagging for review — show both candidates to a human.")
