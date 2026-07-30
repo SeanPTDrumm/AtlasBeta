@@ -55,8 +55,8 @@ cob_names = cobs["Hiscox_COB"].tolist()
 
 STEP0_STOP_THRESHOLD = 0.80
 OVERRIDE_NAME_MATCH_THRESHOLD = 0.75
-NAICS_STRONG_TRUST_THRESHOLD = 0.85
-SEMANTIC_TRUST_THRESHOLD = 0.70
+SEMANTIC_OWN_CONFIDENCE_THRESHOLD = 0.60
+WEAK_WINNER_THRESHOLD = 0.55
 LOW_CONFIDENCE_THRESHOLD = 0.45
 
 def check_rules(name, rules_df):
@@ -112,6 +112,8 @@ def run_pipeline(query):
         row["NAICS_COB"] = ""
         row["NAICS_Score"] = ""
         row["Disagreement_Category"] = ""
+        row["Needs_Review"] = False
+        row["Review_Confidence"] = "High - confident OOA stop"
 
     if pred == "No" and confidence >= STEP0_STOP_THRESHOLD:
         q_emb_check = model.encode([query], normalize_embeddings=True)
@@ -165,15 +167,23 @@ def run_pipeline(query):
     if naics_cob == top_cob:
         row["Disagreement_Category"] = "Agree"
         row["Recommended_COB"] = top_cob
-    elif best_naics_score >= NAICS_STRONG_TRUST_THRESHOLD:
-        row["Disagreement_Category"] = "Strong_Disagree_Trust_NAICS"
-        row["Recommended_COB"] = naics_cob
-    elif top_score >= SEMANTIC_TRUST_THRESHOLD and best_naics_score < SEMANTIC_TRUST_THRESHOLD:
-        row["Disagreement_Category"] = "Mild_Disagree_Trust_Semantic"
-        row["Recommended_COB"] = top_cob
+        row["Needs_Review"] = False
+        row["Review_Confidence"] = "High - both methods agree"
     else:
-        row["Disagreement_Category"] = "Genuine_Disagree_Toss_Up"
-        row["Recommended_COB"] = f"UNCLEAR - review needed ({top_cob} vs {naics_cob})"
+        row["Needs_Review"] = True
+        if top_score >= SEMANTIC_OWN_CONFIDENCE_THRESHOLD:
+            row["Disagreement_Category"] = "Trust_Semantic"
+            row["Recommended_COB"] = top_cob
+            winning_score = top_score
+        else:
+            row["Disagreement_Category"] = "Trust_NAICS"
+            row["Recommended_COB"] = naics_cob
+            winning_score = best_naics_score
+
+        if winning_score >= WEAK_WINNER_THRESHOLD:
+            row["Review_Confidence"] = f"Quick confirm - recommendation likely correct (~87% historically), winning score {winning_score:.2f}"
+        else:
+            row["Review_Confidence"] = f"Genuinely unclear - even the winning answer scored weak ({winning_score:.2f}) - full manual review needed"
 
     return row
 
@@ -216,7 +226,19 @@ if mode == "Single lookup":
             st.subheader("Step 4 — NAICS Secondary Check")
             st.write(f"Closest NAICS description: *\"{result['NAICS_Closest_Desc']}\"* (similarity: {result['NAICS_Score']})")
             st.write(f"That row's known outcome: **{result['NAICS_COB']}**")
-            st.write(f"**Recommended COB: {result['Recommended_COB']}**  ({result['Disagreement_Category']})")
+
+            if not result["Needs_Review"]:
+                st.success(f"Agreement: both methods point to the same answer. **Recommended COB: {result['Recommended_COB']}**")
+            elif result["Disagreement_Category"] == "Trust_Semantic":
+                if "Quick confirm" in result["Review_Confidence"]:
+                    st.info(f"🔵 FLAGGED FOR REVIEW (quick confirm) — semantic matching scored confidently on its own ({result['Top1_Score']:.2f}). **Recommended COB: {result['Recommended_COB']}**")
+                else:
+                    st.warning(f"🔴 FLAGGED FOR REVIEW (genuinely unclear) — {result['Review_Confidence']}. **Best guess: {result['Recommended_COB']}**")
+            else:
+                if "Quick confirm" in result["Review_Confidence"]:
+                    st.info(f"🔵 FLAGGED FOR REVIEW (quick confirm) — semantic was weak, trusting NAICS. **Recommended COB: {result['Recommended_COB']}**")
+                else:
+                    st.warning(f"🔴 FLAGGED FOR REVIEW (genuinely unclear) — {result['Review_Confidence']}. **Best guess: {result['Recommended_COB']}**")
 
 else:
     st.subheader("Step 1: Upload partner names")
@@ -248,10 +270,9 @@ else:
             progress.progress((i + 1) / len(names))
 
         df = pd.DataFrame(results)
-        cols = df.columns.tolist()
-        cols.remove("Recommended_COB")
-        cols.insert(1, "Recommended_COB")
-        df = df[cols]
+        priority_cols = ["Partner_Name", "Recommended_COB", "Needs_Review", "Review_Confidence"]
+        remaining_cols = [c for c in df.columns if c not in priority_cols]
+        df = df[priority_cols + remaining_cols]
 
         st.session_state["batch_results"] = df
 
