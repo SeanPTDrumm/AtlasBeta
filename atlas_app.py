@@ -57,6 +57,18 @@ cob_names = cobs["Hiscox_COB"].tolist()
 def check_rules(name, rules_df):
     nl = name.lower()
     for _, r in rules_df.iterrows():
+        if r["Rule_Type"] != "sector_carve_in":
+            continue
+        if pd.isna(r["Pattern_or_Phrase"]) or not r["Pattern_or_Phrase"]:
+            continue
+        pat = str(r["Pattern_or_Phrase"]).lower()
+        alts = [a.strip() for a in re.split(r"[/]", pat)]
+        for alt in alts:
+            if alt and alt in nl:
+                return r
+    for _, r in rules_df.iterrows():
+        if r["Rule_Type"] == "sector_carve_in":
+            continue
         if pd.isna(r["Pattern_or_Phrase"]) or not r["Pattern_or_Phrase"]:
             continue
         pat = str(r["Pattern_or_Phrase"]).lower()
@@ -92,8 +104,24 @@ if query:
         st.caption("Input is short, but confidence is high enough that this result is likely still reliable.")
 
     if pred == "No" and confidence >= 0.80:
-        st.error("Result: OOA — high confidence. Stopping here (matches Step 0 design).")
+        # Before trusting a confident OOA call, do a cheap safety check:
+        # does this text nearly-exactly match a real COB name? If so, that's
+        # a stronger signal than the classifier and should override it.
+        q_emb_check = model.encode([query], normalize_embeddings=True)
+        sims_check = q_emb_check @ cob_embeddings.T
+        best_idx = int(np.argmax(sims_check[0]))
+        best_score = float(sims_check[0][best_idx])
+
+        if best_score >= 0.75:
+            st.warning(f"Step 0 said OOA with high confidence, BUT this text nearly matches an actual COB name: \"{cob_names[best_idx]}\" (similarity {best_score:.2f}). Overriding the OOA stop — this is a stronger signal. Continuing to further checks.")
+            override_ooa_stop = True
+        else:
+            st.error("Result: OOA — high confidence. Stopping here (matches Step 0 design).")
+            override_ooa_stop = False
     else:
+        override_ooa_stop = True
+
+    if override_ooa_stop:
         st.subheader("Step 2 — Rules Filter")
         vague = check_vague_input(query)
         rule_hit = check_rules(query, rules)
