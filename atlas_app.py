@@ -142,6 +142,14 @@ if query:
             if naics_cob == top_cob:
                 st.success("Agreement: NAICS check confirms the same COB as semantic matching. Confidence boost — this strengthens the case for auto-accept.")
             elif naics_cob == "OOA" and top_cob != "OOA":
-                st.warning("Disagreement: semantic matching found an in-appetite COB, but the closest NAICS description is OOA. Worth flagging for review.")
+                if best_naics_score >= 0.85:
+                    st.error("Strong disagreement: NAICS match is near-exact and says OOA, but semantic matching found an in-appetite COB. The NAICS answer should likely be trusted here — flag for review leaning OOA.")
+                else:
+                    st.warning("Disagreement: semantic matching found an in-appetite COB, but the closest NAICS description is OOA. Worth flagging for review.")
             else:
-                st.warning(f"Disagreement: semantic matching says \"{top_cob}\", but the NAICS check points to \"{naics_cob}\". Flagging for review — show both candidates to a human.")
+                if best_naics_score >= 0.85:
+                    st.error(f"Strong disagreement: NAICS match is near-exact (similarity {best_naics_score:.2f}) and points to \"{naics_cob}\" — this is a curated, high-confidence answer and should likely be trusted over semantic matching's \"{top_cob}\" (similarity {top_cob_score:.2f}).")
+                elif top_cob_score >= 0.70 and best_naics_score < 0.70:
+                    st.info(f"Mild disagreement, but semantic matching scored well ({top_cob_score:.2f}) while the NAICS match was weaker ({best_naics_score:.2f}) — semantic match \"{top_cob}\" is probably more trustworthy here, unless a known business rule (e.g. product availability) favors the NAICS answer.")
+                else:
+                    st.warning(f"Genuine disagreement: semantic matching says \"{top_cob}\" ({top_cob_score:.2f}), NAICS check points to \"{naics_cob}\" ({best_naics_score:.2f}). Neither is clearly stronger — flag for review, show both candidates.")
