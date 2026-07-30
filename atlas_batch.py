@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 
 st.set_page_config(page_title="Atlas Batch Scoring", layout="wide")
 st.title("Atlas — Batch Test & Scoring")
-st.write("Upload partner names, run them all through Atlas, then grade each result and export.")
+st.write("Upload partner names, run them all through Atlas, then download results to grade in Excel.")
 
 @st.cache_resource
 def load_data():
@@ -85,6 +85,7 @@ def run_pipeline(query):
 
     if pred == "No" and confidence >= 0.80:
         row["Final_Stage"] = "Step0_OOA_Stop"
+        row["Recommended_COB"] = "OOA"
         row["Rule_Hit"] = ""
         row["Top1_COB"] = "OOA"
         row["Top1_Score"] = ""
@@ -101,6 +102,7 @@ def run_pipeline(query):
 
     if rule_hit is not None and rule_hit["Rule_Type"] == "phrase_exclusion" and rule_hit["Direction"] == "OOA":
         row["Final_Stage"] = "Rule_OOA_Stop"
+        row["Recommended_COB"] = "OOA"
         row["Rule_Hit"] = rule_hit["Pattern_or_Phrase"]
         row["Top1_COB"] = "OOA"
         row["Top1_Score"] = ""
@@ -139,12 +141,16 @@ def run_pipeline(query):
 
     if naics_cob == top_cob:
         row["Disagreement_Category"] = "Agree"
+        row["Recommended_COB"] = top_cob
     elif best_naics_score >= 0.85:
         row["Disagreement_Category"] = "Strong_Disagree_Trust_NAICS"
+        row["Recommended_COB"] = naics_cob
     elif top_score >= 0.70 and best_naics_score < 0.70:
         row["Disagreement_Category"] = "Mild_Disagree_Trust_Semantic"
+        row["Recommended_COB"] = top_cob
     else:
         row["Disagreement_Category"] = "Genuine_Disagree_Toss_Up"
+        row["Recommended_COB"] = f"UNCLEAR - review needed ({top_cob} vs {naics_cob})"
 
     return row
 
@@ -177,45 +183,17 @@ if st.button("Run batch") and names:
         progress.progress((i + 1) / len(names))
 
     df = pd.DataFrame(results)
-    df["Your_Grade"] = "Not graded yet"
-    df["Your_Notes"] = ""
+
+    cols = df.columns.tolist()
+    cols.remove("Recommended_COB")
+    cols.insert(1, "Recommended_COB")
+    df = df[cols]
 
     st.session_state["batch_results"] = df
 
 if "batch_results" in st.session_state:
-    st.subheader("Step 2: Grade each result")
-    st.write("Use the dropdown in 'Your_Grade' for each row. Add notes if useful. Then download when done.")
-
-    edited_df = st.data_editor(
-        st.session_state["batch_results"],
-        column_config={
-            "Your_Grade": st.column_config.SelectboxColumn(
-                "Your_Grade",
-                options=[
-                    "Not graded yet",
-                    "Correct",
-                    "Correct - 2nd or 3rd guess",
-                    "Wrong - should be different COB",
-                    "Wrong - should be OOA",
-                    "Wrong - should be In-Appetite",
-                    "Correctly flagged for review",
-                    "Should have been flagged but wasn't",
-                    "Ambiguous - no clear right answer",
-                ],
-                required=True,
-            )
-        },
-        num_rows="fixed",
-        use_container_width=True,
-        height=600,
-        key="editor",
-    )
-
-    st.session_state["batch_results"] = edited_df
-
-    st.subheader("Step 3: Export")
-    csv_out = edited_df.to_csv(index=False)
-    st.download_button("Download graded results as CSV", csv_out, "atlas_batch_graded.csv", "text/csv")
-
-    graded = edited_df[edited_df["Your_Grade"] != "Not graded yet"]
-    st.write(f"Graded so far: {len(graded)} / {len(edited_df)}")
+    st.subheader("Step 2: Download and grade in Excel")
+    st.write("Open this in Excel, add a grading column with dropdown validation, and review at your own pace.")
+    st.dataframe(st.session_state["batch_results"].head(20))
+    csv_out = st.session_state["batch_results"].to_csv(index=False)
+    st.download_button("Download results as CSV", csv_out, "atlas_batch_results.csv", "text/csv")
