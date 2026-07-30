@@ -5,9 +5,9 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
-st.set_page_config(page_title="Atlas Demo", layout="wide")
-st.title("Atlas — Working Demo")
-st.write("Type a business description below and see it move through each real, tested step.")
+st.set_page_config(page_title="Atlas Batch Scoring", layout="wide")
+st.title("Atlas — Batch Test & Scoring")
+st.write("Upload partner names, run them all through Atlas, then download results to grade in Excel.")
 
 @st.cache_resource
 def load_data():
@@ -47,7 +47,7 @@ def encode_naics(_model, _naics):
 cobs, naics, rules = load_data()
 vec, appetite_clf = train_appetite_classifier(naics)
 
-with st.spinner("Loading semantic matching model (first run only, may take a minute)..."):
+with st.spinner("Loading models (first run only, may take a minute)..."):
     model = load_semantic_model()
     cob_texts, cob_embeddings = encode_cobs(model, cobs)
     naics_df, naics_embeddings = encode_naics(model, naics)
@@ -82,11 +82,8 @@ def check_vague_input(name):
     vague_prefixes = ["other ", "miscellaneous ", "noc "]
     return any(name.lower().strip().startswith(p) for p in vague_prefixes)
 
-query = st.text_input("Enter a business description:", placeholder="e.g. Cardiologist office")
-
-if query:
-    st.divider()
-    st.subheader("Step 0 — Appetite Classifier")
+def run_pipeline(query):
+    row = {"Partner_Name": query}
     X_query = vec.transform([query])
     pred = appetite_clf.predict(X_query)[0]
     prob = appetite_clf.predict_proba(X_query)[0]
@@ -94,90 +91,130 @@ if query:
     confidence = prob[classes.index(pred)]
     is_short = len(query.split()) <= 2
 
-    st.write(f"**Prediction:** {'In-Appetite' if pred=='Yes' else 'Out of Appetite (OOA)'}  |  **Confidence:** {confidence:.2f}")
-
-    borderline = confidence < 0.80
-
-    if is_short and borderline:
-        st.warning("Input is short AND confidence is borderline — this is exactly the pattern that caused a real error in testing ('Plumbers' misfired). Treating this result with extra caution and continuing to further checks.")
-    elif is_short:
-        st.caption("Input is short, but confidence is high enough that this result is likely still reliable.")
+    row["Step0_Prediction"] = "In-Appetite" if pred == "Yes" else "OOA"
+    row["Step0_Confidence"] = round(float(confidence), 3)
+    row["Step0_Short_Input"] = is_short
+    row["Step0_Override"] = ""
 
     if pred == "No" and confidence >= 0.80:
-        # Before trusting a confident OOA call, do a cheap safety check:
-        # does this text nearly-exactly match a real COB name? If so, that's
-        # a stronger signal than the classifier and should override it.
         q_emb_check = model.encode([query], normalize_embeddings=True)
         sims_check = q_emb_check @ cob_embeddings.T
         best_idx = int(np.argmax(sims_check[0]))
         best_score = float(sims_check[0][best_idx])
 
-        if best_score >= 0.75:
-            st.warning(f"Step 0 said OOA with high confidence, BUT this text nearly matches an actual COB name: \"{cob_names[best_idx]}\" (similarity {best_score:.2f}). Overriding the OOA stop — this is a stronger signal. Continuing to further checks.")
-            override_ooa_stop = True
+        if best_score < 0.75:
+            row["Final_Stage"] = "Step0_OOA_Stop"
+            row["Recommended_COB"] = "OOA"
+            row["Rule_Hit"] = ""
+            row["Top1_COB"] = "OOA"
+            row["Top1_Score"] = ""
+            row["Top2_COB"] = ""
+            row["Top3_COB"] = ""
+            row["NAICS_Closest_Desc"] = ""
+            row["NAICS_COB"] = ""
+            row["NAICS_Score"] = ""
+            row["Disagreement_Category"] = ""
+            return row
         else:
-            st.error("Result: OOA — high confidence. Stopping here (matches Step 0 design).")
-            override_ooa_stop = False
+            row["Step0_Override"] = f"Overridden - near-exact match to {cob_names[best_idx]} ({best_score:.2f})"
+
+    vague = check_vague_input(query)
+    rule_hit = check_rules(query, rules)
+
+    if rule_hit is not None and rule_hit["Rule_Type"] == "phrase_exclusion" and rule_hit["Direction"] == "OOA":
+        row["Final_Stage"] = "Rule_OOA_Stop"
+        row["Recommended_COB"] = "OOA"
+        row["Rule_Hit"] = rule_hit["Pattern_or_Phrase"]
+        row["Top1_COB"] = "OOA"
+        row["Top1_Score"] = ""
+        row["Top2_COB"] = ""
+        row["Top3_COB"] = ""
+        row["NAICS_Closest_Desc"] = ""
+        row["NAICS_COB"] = ""
+        row["NAICS_Score"] = ""
+        row["Disagreement_Category"] = ""
+        return row
+
+    row["Rule_Hit"] = rule_hit["Pattern_or_Phrase"] if rule_hit is not None else ""
+    row["Vague_Input_Flag"] = vague
+
+    q_emb = model.encode([query], normalize_embeddings=True)
+    sims = q_emb @ cob_embeddings.T
+    top3_idx = np.argsort(-sims[0])[:3]
+    top_cob = cob_names[top3_idx[0]]
+    top_score = float(sims[0][top3_idx[0]])
+
+    row["Final_Stage"] = "Semantic_Match"
+    row["Top1_COB"] = top_cob
+    row["Top1_Score"] = round(top_score, 3)
+    row["Top2_COB"] = f"{cob_names[top3_idx[1]]} ({sims[0][top3_idx[1]]:.3f})"
+    row["Top3_COB"] = f"{cob_names[top3_idx[2]]} ({sims[0][top3_idx[2]]:.3f})"
+
+    naics_sims = q_emb @ naics_embeddings.T
+    best_naics_idx = int(np.argmax(naics_sims[0]))
+    best_naics_score = float(naics_sims[0][best_naics_idx])
+    naics_row = naics_df.iloc[best_naics_idx]
+    naics_cob = naics_row["Hiscox_COB"]
+
+    row["NAICS_Closest_Desc"] = naics_row["NAICS_Description"]
+    row["NAICS_COB"] = naics_cob
+    row["NAICS_Score"] = round(best_naics_score, 3)
+
+    if naics_cob == top_cob:
+        row["Disagreement_Category"] = "Agree"
+        row["Recommended_COB"] = top_cob
+    elif best_naics_score >= 0.85:
+        row["Disagreement_Category"] = "Strong_Disagree_Trust_NAICS"
+        row["Recommended_COB"] = naics_cob
+    elif top_score >= 0.70 and best_naics_score < 0.70:
+        row["Disagreement_Category"] = "Mild_Disagree_Trust_Semantic"
+        row["Recommended_COB"] = top_cob
     else:
-        override_ooa_stop = True
+        row["Disagreement_Category"] = "Genuine_Disagree_Toss_Up"
+        row["Recommended_COB"] = f"UNCLEAR - review needed ({top_cob} vs {naics_cob})"
 
-    if override_ooa_stop:
-        st.subheader("Step 2 — Rules Filter")
-        vague = check_vague_input(query)
-        rule_hit = check_rules(query, rules)
+    return row
 
-        if vague:
-            st.warning('Input starts with a generic catch-all term ("Other"/"Miscellaneous"/"NOC") — flagged for human review regardless of any match found below.')
+st.subheader("Step 1: Upload partner names")
+uploaded_file = st.file_uploader("Upload a CSV or Excel file with partner names (one column)", type=["csv", "xlsx"])
 
-        stop_here = False
-        if rule_hit is not None:
-            st.info(f"**Rule matched:** \"{rule_hit['Pattern_or_Phrase']}\" -> **{rule_hit['Direction']}** ({rule_hit['Rule_Type']})")
-            st.write(f"Notes: {rule_hit['Notes']}")
-            if rule_hit['Rule_Type'] == 'phrase_exclusion' and rule_hit['Direction'] == 'OOA':
-                st.error("This is a complete answer (OOA exclusion rule) — stopping here.")
-                stop_here = True
-            elif rule_hit['Rule_Type'] == 'sector_carve_in':
-                st.write("This rule only confirms the case is In-Appetite (overriding a sector-level OOA pattern) — it does NOT specify which COB. Continuing to semantic matching to find the specific COB.")
-        else:
-            st.write("No rule matched — continuing to semantic matching.")
+names = []
+if uploaded_file is not None:
+    if uploaded_file.name.endswith(".csv"):
+        upload_df = pd.read_csv(uploaded_file)
+    else:
+        upload_df = pd.read_excel(uploaded_file)
 
-        if not stop_here:
-            st.subheader("Step 3 — Semantic Matching (against 543 COBs)")
-            q_emb = model.encode([query], normalize_embeddings=True)
-            sims = q_emb @ cob_embeddings.T
-            top3_idx = np.argsort(-sims[0])[:3]
+    st.write("Preview:")
+    st.dataframe(upload_df.head())
 
-            for rank, idx in enumerate(top3_idx, start=1):
-                st.write(f"**#{rank}: {cob_names[idx]}**  (similarity: {sims[0][idx]:.3f})")
+    col_choice = st.selectbox("Which column has the partner names?", upload_df.columns.tolist())
+    names = upload_df[col_choice].dropna().astype(str).tolist()
+    st.write(f"Found {len(names)} names.")
 
-            top_cob = cob_names[top3_idx[0]]
-            top_cob_score = sims[0][top3_idx[0]]
+if st.button("Run batch") and names:
+    if len(names) > 300:
+        st.warning(f"You have {len(names)} names - only processing the first 300 to keep this responsive.")
+        names = names[:300]
 
-            if top_cob_score < 0.45:
-                st.warning("Top match confidence is low — this case likely needs human review rather than auto-accept.")
+    progress = st.progress(0)
+    results = []
+    for i, name in enumerate(names):
+        results.append(run_pipeline(name))
+        progress.progress((i + 1) / len(names))
 
-            st.subheader("Step 4 — NAICS Secondary Check (informational, does not override)")
-            naics_sims = q_emb @ naics_embeddings.T
-            best_naics_idx = int(np.argmax(naics_sims[0]))
-            best_naics_score = naics_sims[0][best_naics_idx]
-            naics_row = naics_df.iloc[best_naics_idx]
-            naics_cob = naics_row["Hiscox_COB"]
-            naics_desc = naics_row["NAICS_Description"]
+    df = pd.DataFrame(results)
 
-            st.write(f"Closest NAICS description found: *\"{naics_desc}\"* (similarity: {best_naics_score:.3f})")
-            st.write(f"That NAICS row's known outcome: **{naics_cob}**")
+    cols = df.columns.tolist()
+    cols.remove("Recommended_COB")
+    cols.insert(1, "Recommended_COB")
+    df = df[cols]
 
-            if naics_cob == top_cob:
-                st.success("Agreement: NAICS check confirms the same COB as semantic matching. Confidence boost — this strengthens the case for auto-accept.")
-            elif naics_cob == "OOA" and top_cob != "OOA":
-                if best_naics_score >= 0.85:
-                    st.error("Strong disagreement: NAICS match is near-exact and says OOA, but semantic matching found an in-appetite COB. The NAICS answer should likely be trusted here — flag for review leaning OOA.")
-                else:
-                    st.warning("Disagreement: semantic matching found an in-appetite COB, but the closest NAICS description is OOA. Worth flagging for review.")
-            else:
-                if best_naics_score >= 0.85:
-                    st.error(f"Strong disagreement: NAICS match is near-exact (similarity {best_naics_score:.2f}) and points to \"{naics_cob}\" — this is a curated, high-confidence answer and should likely be trusted over semantic matching's \"{top_cob}\" (similarity {top_cob_score:.2f}).")
-                elif top_cob_score >= 0.70 and best_naics_score < 0.70:
-                    st.info(f"Mild disagreement, but semantic matching scored well ({top_cob_score:.2f}) while the NAICS match was weaker ({best_naics_score:.2f}) — semantic match \"{top_cob}\" is probably more trustworthy here, unless a known business rule (e.g. product availability) favors the NAICS answer.")
-                else:
-                    st.warning(f"Genuine disagreement: semantic matching says \"{top_cob}\" ({top_cob_score:.2f}), NAICS check points to \"{naics_cob}\" ({best_naics_score:.2f}). Neither is clearly stronger — flag for review, show both candidates.")
+    st.session_state["batch_results"] = df
+
+if "batch_results" in st.session_state:
+    st.subheader("Step 2: Download and grade in Excel")
+    st.write("Open this in Excel, add a grading column with dropdown validation, and review at your own pace.")
+    st.dataframe(st.session_state["batch_results"].head(20))
+    csv_out = st.session_state["batch_results"].to_csv(index=False)
+    st.download_button("Download results as CSV", csv_out, "atlas_batch_results.csv", "text/csv")
