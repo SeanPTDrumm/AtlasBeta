@@ -108,6 +108,27 @@ def check_vague_input(name):
     vague_prefixes = ["other ", "miscellaneous ", "noc "]
     return any(name.lower().strip().startswith(p) for p in vague_prefixes)
 
+HARDCODED_OOA_PHRASES = [
+    "design build", "design-build", "design builder",
+    "home inspector", "home inspection",
+    "independent movie producer", "independent film producer",
+    "documentary producer", "television producer",
+    "skyscraper photography", "underwater photography",
+]
+HARDCODED_INAPPETITE_PHRASES = [
+    "building inspector", "building code inspection", "building inspection",
+]
+
+def check_hardcoded_rules(name):
+    nl = name.lower()
+    for phrase in HARDCODED_INAPPETITE_PHRASES:
+        if phrase in nl:
+            return "In-Appetite", phrase
+    for phrase in HARDCODED_OOA_PHRASES:
+        if phrase in nl:
+            return "OOA", phrase
+    return None, None
+
 MOJIBAKE_FIXES = {
     "â€™": "'",
     "â€˜": "'",
@@ -130,7 +151,28 @@ def run_pipeline(query):
     query = clean_text(query)
     row = {"Partner_Name": query}
 
-    # Step -1: has a human already verified the exact answer for this phrase?
+    hardcoded_direction, hardcoded_phrase = check_hardcoded_rules(query)
+    if hardcoded_direction == "OOA":
+        row["Final_Stage"] = "Hardcoded_Rule_OOA_Stop"
+        row["Recommended_COB"] = "OOA"
+        row["Needs_Review"] = False
+        row["Review_Confidence"] = f"High - hardcoded guide rule matched: \"{hardcoded_phrase}\""
+        row["Step0_Prediction"] = ""
+        row["Step0_Confidence"] = ""
+        row["Step0_Short_Input"] = ""
+        row["Step0_Override"] = ""
+        row["Vague_Input_Flag"] = ""
+        row["Rule_Hit"] = hardcoded_phrase
+        row["Top1_COB"] = ""
+        row["Top1_Score"] = ""
+        row["Top2_COB"] = ""
+        row["Top3_COB"] = ""
+        row["NAICS_Closest_Desc"] = ""
+        row["NAICS_COB"] = ""
+        row["NAICS_Score"] = ""
+        row["Disagreement_Category"] = ""
+        return row
+
     lookup_key = query.strip().lower()
     if lookup_key in verified_bank:
         verified_cob, source = verified_bank[lookup_key]
@@ -251,9 +293,6 @@ def run_pipeline(query):
 
         if winning_score >= WEAK_WINNER_THRESHOLD:
             if row["Disagreement_Category"] == "Trust_NAICS" and naics_cob == "OOA":
-                # Evidence: OOA-vs-in-appetite disagreements are usually clean,
-                # obvious calls (80% felt unnecessary to flag in real grading).
-                # COB-vs-COB disagreements are genuinely trickier - keep flagging those.
                 row["Needs_Review"] = False
                 row["Review_Confidence"] = f"High - NAICS confidently says OOA (winning score {winning_score:.2f})"
             else:
@@ -276,6 +315,8 @@ if mode == "Single lookup":
             st.success(f"✅ VERIFIED MATCH — this exact phrase has a human-confirmed answer on file.")
             st.write(f"**Recommended COB: {result['Recommended_COB']}**")
             st.caption(result["Review_Confidence"])
+        elif result["Final_Stage"] == "Hardcoded_Rule_OOA_Stop":
+            pass
         else:
             st.subheader("Step 0 — Appetite Classifier")
             st.write(f"**Prediction:** {result['Step0_Prediction']}  |  **Confidence:** {result['Step0_Confidence']:.2f}")
@@ -285,11 +326,13 @@ if mode == "Single lookup":
                 st.warning(f"Step 0 said OOA with high confidence, but overridden: {result['Step0_Override']}")
 
         if result["Final_Stage"] == "Verified_Bank_Match":
-            pass  # already displayed above, nothing more to show
+            pass
         elif result["Final_Stage"] == "Step0_OOA_Stop":
             st.error("Result: OOA — high confidence, no near-exact COB name match found. Stopping here.")
         elif result["Final_Stage"] == "Rule_OOA_Stop":
             st.error(f"Result: OOA — rule matched (\"{result['Rule_Hit']}\"). Stopping here.")
+        elif result["Final_Stage"] == "Hardcoded_Rule_OOA_Stop":
+            st.error(f"Result: OOA — hardcoded guide rule matched (\"{result['Rule_Hit']}\"). Stopping here.")
         else:
             st.subheader("Step 2 — Rules Filter")
             if result["Vague_Input_Flag"]:
