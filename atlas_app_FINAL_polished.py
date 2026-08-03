@@ -622,9 +622,9 @@ else:
                 run=st.button("RUN ATLAS",use_container_width=True,key="run_batch")
             if run:
                 names=raw[selected_col].dropna().astype(str).tolist()
-                if len(names)>300:
-                    st.warning(f"Only the first 300 of {len(names)} terms will be processed in this session.")
-                    names=names[:300]
+                if len(names)>1000:
+                    st.warning(f"Only the first 1000 of {len(names)} terms will be processed in this session.")
+                    names=names[:1000]
                 bar=st.progress(0,text="Classifying partner terms...")
                 rows=[]; technical=[]
                 for i,name in enumerate(names):
